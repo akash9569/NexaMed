@@ -3,15 +3,16 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Pill } from 'lucide-react';
+import { Menu, Pill, ShoppingCart } from 'lucide-react';
 import { SearchForm } from '@/components/search-form';
 import { PillWiseLogo } from '../icons';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/#health-concerns', label: 'Conditions' },
-  { href: '/#top-products', label: 'Medications' },
+  { href: '/#shop', label: 'Shop' },
+  { href: '/#categories', label: 'Categories' },
+  { href: '/#about-us', label: 'About Us' },
   { href: '/pharmacy-locator', label: 'Pharmacy Locator' },
 ];
 
@@ -72,10 +73,13 @@ export function Header() {
           </SheetContent>
         </Sheet>
         
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div className="flex flex-1 items-center justify-between space-x-4 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
             <SearchForm />
           </div>
+          <Button variant="ghost" size="icon" aria-label="Shopping Cart">
+            <ShoppingCart className="h-5 w-5" />
+          </Button>
         </div>
       </div>
     </header>
