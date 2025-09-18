@@ -194,11 +194,11 @@ export default function Home() {
     const valueDeals = medications.slice(0, 5).map((med, i) => ({ ...med, mrp: med.price * 1.6, discount: 38, tag: i === 1 ? 'Bestseller' : 'Buy 1 Get 1', showAddToCart: true }));
     const fiftyOffDeals = medications.slice(1, 6).map((med, i) => ({ ...med, mrp: med.price * 2, discount: 50, tag: i === 1 ? 'Bestseller' : 'Buy 2, +2% OFF', showAddToCart: true }));
     const healthCheckups = [
-        { id: 'gold-checkup', name: 'Comprehensive Gold Full Body Checkup', price: 2249, mrp: 4498, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/601/200/200', imageHint: 'health checkup', showAddToCart: false, href: '#' },
-        { id: 'silver-checkup', name: 'Good Health Silver Package', price: 699, mrp: 1398, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/602/200/200', imageHint: 'health package', showAddToCart: false, href: '#' },
-        { id: 'silver-full-checkup', name: 'Comprehensive Silver Full Body Checkup', price: 1899, mrp: 3798, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/603/200/200', imageHint: 'medical checkup', showAddToCart: false, href: '#' },
-        { id: 'platinum-checkup', name: 'Comprehensive Platinum Full Body Checkup', price: 3599, mrp: 7198, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/604/200/200', imageHint: 'premium health check', showAddToCart: false, href: '#' },
-        { id: 'good-health-checkup', name: 'Good Health Platinum Package', price: 1499, mrp: 2998, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/605/200/200', imageHint: 'wellness package', showAddToCart: false, href: '#' },
+        { id: 'gold-checkup', name: 'Comprehensive Gold Full Body Checkup', price: 2249, mrp: 4498, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/601/200/200', imageHint: 'health checkup', showAddToCart: false, href: '/health-checkups' },
+        { id: 'silver-checkup', name: 'Good Health Silver Package', price: 699, mrp: 1398, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/602/200/200', imageHint: 'health package', showAddToCart: false, href: '/health-checkups' },
+        { id: 'silver-full-checkup', name: 'Comprehensive Silver Full Body Checkup', price: 1899, mrp: 3798, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/603/200/200', imageHint: 'medical checkup', showAddToCart: false, href: '/health-checkups' },
+        { id: 'platinum-checkup', name: 'Comprehensive Platinum Full Body Checkup', price: 3599, mrp: 7198, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/604/200/200', imageHint: 'premium health check', showAddToCart: false, href: '/health-checkups' },
+        { id: 'good-health-checkup', name: 'Good Health Platinum Package', price: 1499, mrp: 2998, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/605/200/200', imageHint: 'wellness package', showAddToCart: false, href: '/health-checkups' },
     ];
     const featuredBrands = [
         { name: 'Optimum Nutrition', logoUrl: 'https://picsum.photos/seed/701/100/100', imageHint: 'ON logo' },

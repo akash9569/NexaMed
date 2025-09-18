@@ -70,14 +70,18 @@ export function Header() {
                         {label}
                       </Link>
                     ))}
-                    <DropdownMenuContent>
-                     <h3 className="font-semibold px-2 py-1.5 text-primary">Shop by Category</h3>
-                    {categoryNavLinks.map((menu) => (
-                      <Link key={menu.name} href={menu.href} className="block pl-4 text-sm text-foreground/80 hover:text-foreground py-1">
-                        {menu.name}
-                      </Link>
-                    ))}
-                    </DropdownMenuContent>
+                    <DropdownMenu>
+                      <DropdownMenuTrigger className="font-semibold text-foreground/80 hover:text-foreground text-left">Shop by Category</DropdownMenuTrigger>
+                      <DropdownMenuContent>
+                        {categoryNavLinks.map((menu) => (
+                          <DropdownMenuItem key={menu.name} asChild>
+                            <Link href={menu.href}>
+                              {menu.name}
+                            </Link>
+                          </DropdownMenuItem>
+                        ))}
+                      </DropdownMenuContent>
+                    </DropdownMenu>
                   </div>
                 </ScrollArea>
               </SheetContent>
