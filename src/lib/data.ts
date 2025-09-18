@@ -322,6 +322,51 @@ export const conditions: Condition[] = [
     symptoms: [],
     treatments: [],
   },
+  {
+    id: 'skin-care',
+    name: 'Skin Care',
+    description: 'Solutions for various skin concerns like acne, dryness, and aging.',
+    imageUrl: 'https://picsum.photos/seed/511/80/80',
+    imageHint: 'skin cream',
+    symptoms: [],
+    treatments: [],
+  },
+  {
+    id: 'hair-care',
+    name: 'Hair Care',
+    description: 'Address hair fall, dandruff, and other scalp issues.',
+    imageUrl: 'https://picsum.photos/seed/512/80/80',
+    imageHint: 'hair shampoo',
+    symptoms: [],
+    treatments: [],
+  },
+  {
+    id: 'bone-joint-care',
+    name: 'Bone & Joint',
+    description: 'Strengthen your bones and manage joint pain.',
+    imageUrl: 'https://picsum.photos/seed/513/80/80',
+    imageHint: 'human skeleton joint',
+    symptoms: [],
+    treatments: [],
+  },
+  {
+    id: 'mental-wellness',
+    name: 'Mental Wellness',
+    description: 'Products to help manage stress, anxiety, and sleep.',
+    imageUrl: 'https://picsum.photos/seed/514/80/80',
+    imageHint: 'calm brain',
+    symptoms: [],
+    treatments: [],
+  },
+  {
+    id: 'women-health',
+    name: 'Women\'s Health',
+    description: 'Specific products for women\'s health needs.',
+    imageUrl: 'https://picsum.photos/seed/515/80/80',
+    imageHint: 'female symbol',
+    symptoms: [],
+    treatments: [],
+  },
 ];
 
 export const doctors: Doctor[] = [
@@ -378,5 +423,88 @@ export const doctors: Doctor[] = [
     location: 'Pune',
     imageUrl: 'https://picsum.photos/seed/doc6/200/200',
     imageHint: 'male doctor thinking'
+  },
+  {
+    id: 'doc-7',
+    name: 'Dr. Aisha Khan',
+    specialty: 'Endocrinologist',
+    experience: 11,
+    location: 'Hyderabad',
+    imageUrl: 'https://picsum.photos/seed/doc7/200/200',
+    imageHint: 'female doctor hijab'
+  },
+  {
+    id: 'doc-8',
+    name: 'Dr. Arjun Reddy',
+    specialty: 'General Physician',
+    experience: 8,
+    location: 'Kolkata',
+    imageUrl: 'https://picsum.photos/seed/doc8/200/200',
+    imageHint: 'young male doctor'
+  },
+  {
+    id: 'doc-9',
+    name: 'Dr. Sneha Patil',
+    specialty: 'Psychiatrist',
+    experience: 9,
+    location: 'Mumbai',
+    imageUrl: 'https://picsum.photos/seed/doc9/200/200',
+    imageHint: 'female doctor listening'
+  },
+  {
+    id: 'doc-10',
+    name: 'Dr. Rajesh Kumar',
+    specialty: 'Pulmonologist',
+    experience: 16,
+    location: 'Delhi',
+    imageUrl: 'https://picsum.photos/seed/doc10/200/200',
+    imageHint: 'middle-aged male doctor'
+  },
+  {
+    id: 'doc-11',
+    name: 'Dr. Sunita Rao',
+    specialty: 'Gastroenterologist',
+    experience: 13,
+    location: 'Bengaluru',
+    imageUrl: 'https://picsum.photos/seed/doc11/200/200',
+    imageHint: 'indian female doctor'
+  },
+  {
+    id: 'doc-12',
+    name: 'Dr. Anand Iyer',
+    specialty: 'ENT Specialist',
+    experience: 22,
+    location: 'Chennai',
+    imageUrl: 'https://picsum.photos/seed/doc12/200/200',
+    imageHint: 'senior male doctor'
+  },
+  {
+    id: 'doc-13',
+    name: 'Dr. Fatima Ahmed',
+    specialty: 'Ophthalmologist',
+    experience: 7,
+    location: 'Pune',
+    imageUrl: 'https://picsum.photos/seed/doc13/200/200',
+    imageHint: 'doctor with glasses'
+  },
+  {
+    id: 'doc-14',
+    name: 'Dr. Karan Malhotra',
+    specialty: 'Urologist',
+    experience: 19,
+    location: 'Mumbai',
+    imageUrl: 'https://picsum.photos/seed/doc14/200/200',
+    imageHint: 'confident male doctor'
+  },
+  {
+    id: 'doc-15',
+    name: 'Dr. Divya Singh',
+    specialty: 'Oncologist',
+    experience: 17,
+    location: 'Delhi',
+    imageUrl: 'https://picsum.photos/seed/doc15/200/200',
+    imageHint: 'compassionate female doctor'
   }
 ];
+
+    
