@@ -69,7 +69,7 @@ export const brands: Brand[] = [
     name: 'Horlicks',
     logoUrl: 'https://picsum.photos/seed/brand10/200/100',
     imageHint: 'Horlicks logo',
-    description: 'Nourishing the nation\'s health for over a century.',
+    description: "Nourishing the nation's health for over a century.",
   },
   {
     id: 'ensure',
