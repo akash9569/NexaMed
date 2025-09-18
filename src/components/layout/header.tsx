@@ -19,22 +19,22 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const topNavLinks = [
   { href: '/shop', label: 'Buy Medicines' },
-  { href: '#', label: 'Find Doctors' },
-  { href: '#', label: 'Lab Tests' },
-  { href: '#', label: 'Circle Membership' },
-  { href: '#', label: 'Health Records' },
+  { href: '/find-doctors', label: 'Find Doctors' },
+  { href: '/health-checkups', label: 'Lab Tests' },
+  { href: '/membership', label: 'Circle Membership' },
+  { href: '/health-records', label: 'Health Records' },
 ];
 
 const categoryNavLinks = [
-    { name: "Apollo Products", href: "#" },
-    { name: "Baby Care", href: "#" },
-    { name: "Nutritional Drinks & Supplements", href: "#" },
-    { name: "Women Care", href: "#" },
+    { name: "Apollo Products", href: "/brands" },
+    { name: "Baby Care", href: "/baby-care" },
+    { name: "Nutritional Drinks & Supplements", href: "/nutrition" },
+    { name: "Women Care", href: "/women-care" },
     { name: "Personal Care", href: "/personal-care" },
-    { name: "Ayurveda", href: "#" },
-    { name: "Health Devices", href: "#" },
-    { name: "Home Essentials", href: "#" },
-    { name: "Health Condition", href: "#" },
+    { name: "Ayurveda", href: "/ayurveda" },
+    { name: "Health Devices", href: "/health-devices" },
+    { name: "Home Essentials", href: "/home-essentials" },
+    { name: "Health Condition", href: "/health-conditions" },
 ]
 
 
@@ -59,16 +59,16 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="pr-0">
-                <SheetHeader className="text-left">
-                  <SheetTitle>
-                     <Link href="/" className="flex items-center space-x-2">
-                      <PillWiseLogo className="h-6 w-6 text-primary" />
-                      <span className="font-bold font-headline">PillWise</span>
-                    </Link>
-                  </SheetTitle>
+                <SheetHeader className="text-left pl-6">
+                    <SheetTitle>
+                        <Link href="/" className="flex items-center space-x-2">
+                            <PillWiseLogo className="h-6 w-6 text-primary" />
+                            <span className="font-bold font-headline">PillWise</span>
+                        </Link>
+                    </SheetTitle>
                 </SheetHeader>
                 <ScrollArea className="h-[calc(100vh-8rem)] mt-6">
-                  <div className="flex flex-col space-y-3 pr-6">
+                  <div className="flex flex-col space-y-3 pr-6 pl-6">
                     {topNavLinks.map(({ href, label }) => (
                       <Link key={label} href={href} className="font-semibold text-foreground/80 hover:text-foreground">
                         {label}
