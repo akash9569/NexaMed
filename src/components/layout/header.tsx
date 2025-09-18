@@ -60,12 +60,12 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="pr-0">
                 <SheetHeader className="text-left pl-6">
-                    <SheetTitle>
-                        <Link href="/" className="flex items-center space-x-2">
-                            <PillWiseLogo className="h-6 w-6 text-primary" />
-                            <span className="font-bold font-headline">PillWise</span>
-                        </Link>
-                    </SheetTitle>
+                  <SheetTitle>
+                    <Link href="/" className="flex items-center space-x-2">
+                        <PillWiseLogo className="h-6 w-6 text-primary" />
+                        <span className="font-bold font-headline">PillWise</span>
+                    </Link>
+                  </SheetTitle>
                 </SheetHeader>
                 <ScrollArea className="h-[calc(100vh-8rem)] mt-6">
                   <div className="flex flex-col space-y-3 pr-6 pl-6">
