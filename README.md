@@ -1,5 +1,8 @@
 # NexaMed - E-commerce Pharmacy
 
+![NexaMed Hero Image](https://picsum.photos/seed/readme-hero/1200/600)
+*<p align="center">A modern e-commerce pharmacy application.</p>*
+
 NexaMed is a modern, full-featured e-commerce pharmacy application built with Next.js, Firebase, and Genkit. It provides a seamless user experience for purchasing medications, booking health checkups, and accessing health-related information.
 
 ## Key Features
@@ -23,19 +26,46 @@ NexaMed is a modern, full-featured e-commerce pharmacy application built with Ne
 
 ## Getting Started
 
-To get started with this project, you can explore the main application file:
+To get the project up and running on your local machine, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your system. You can download them from [nodejs.org](https://nodejs.org/).
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/nexamed.git
+    cd nexamed
+    ```
+
+2.  **Install dependencies:**
+    This command will install all the necessary packages defined in `package.json`.
+    ```bash
+    npm install
+    ```
+
+3. **Set up environment variables:**
+   Create a `.env` file in the root of your project and add any necessary environment variables (e.g., Firebase config keys).
+   ```
+   # .env
+   NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+   # ... other variables
+   ```
+
+4.  **Run the development server:**
+    This will start the Next.js development server, and you can view the application.
+    ```bash
+    npm run dev
+    ```
+
+5.  **Open the application:**
+    Navigate to `http://localhost:9002` in your browser to see the app in action.
+
+## Exploring the Code
 
 - `src/app/page.tsx`: The entry point for the homepage.
 - `src/app/layout.tsx`: The main layout for the application.
-
-To run the project locally, you can use the following commands:
-
-```bash
-# Install dependencies
-npm install
-
-# Run the development server
-npm run dev
-```
-
-This will start the Next.js development server, and you can view the application at `http://localhost:9002`.
+- `src/lib/data.ts`: Contains the mock data for products, conditions, and doctors.
+- `src/ai/flows/`: Home to the Genkit AI flows for features like health record analysis.
