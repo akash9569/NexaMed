@@ -110,8 +110,8 @@ const ProductCarousel = ({ title, products, viewAllHref }: { title: string, prod
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md -translate-x-1/2" />
-                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md translate-x-1/2" />
+                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
+                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
             </Carousel>
         </div>
     </section>
@@ -148,8 +148,8 @@ const BrandsCarousel = ({ title, brands, viewAllHref }: { title: string, brands:
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md -translate-x-1/2" />
-                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md translate-x-1/2" />
+                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
+                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
             </Carousel>
         </div>
     </section>
@@ -170,7 +170,7 @@ const CategoryCarousel = ({ title, categories, viewAllHref }: { title: string, c
                 <CarouselContent>
                     {categories.map((category, index) => (
                         <CarouselItem key={index} className="basis-1/3 md:basis-1/5 lg:basis-1/7">
-                            <Link href={category.href} className="block">
+                            <Link href={category.href}>
                                 <Card className="hover:shadow-lg transition-shadow">
                                     <CardContent className="p-0">
                                         <div className={`aspect-square flex items-center justify-center p-4 rounded-t-lg ${category.bgColor}`}>
@@ -190,8 +190,8 @@ const CategoryCarousel = ({ title, categories, viewAllHref }: { title: string, c
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md -translate-x-1/2" />
-                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md translate-x-1/2" />
+                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
+                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
             </Carousel>
         </div>
     </section>
@@ -292,9 +292,7 @@ export default function Home() {
                     className="mb-4 rounded-full object-cover"
                     data-ai-hint={condition.imageHint}
                   />
-                  <CardHeader className="p-0">
-                    <CardTitle className="text-lg font-semibold">{condition.name}</CardTitle>
-                  </CardHeader>
+                  <p className="text-lg font-semibold">{condition.name}</p>
                 </Card>
               </Link>
             ))}
