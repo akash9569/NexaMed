@@ -1,3 +1,4 @@
+
 import type { HealthDevice } from './types';
 
 export const healthDevices: HealthDevice[] = [
