@@ -11,10 +11,80 @@ import { conditions, medications } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { formatCurrency } from '@/lib/utils';
+import { MapPin, Upload, Stethoscope, ShieldCheck, Microscope } from 'lucide-react';
+
+const featureCards = [
+    {
+        title: "Pharmacy Near Me",
+        description: "FIND STORE",
+        icon: MapPin,
+        href: "/pharmacy-locator",
+        image: "https://picsum.photos/seed/401/200/150",
+        imageHint: "map marker",
+    },
+    {
+        title: "Get 20%* off on Medicines",
+        description: "Upload Now",
+        icon: Upload,
+        href: "/#",
+        image: "https://picsum.photos/seed/402/200/150",
+        imageHint: "prescription upload",
+    },
+    {
+        title: "Doctor Appointment",
+        description: "Book Now",
+        icon: Stethoscope,
+        href: "/#",
+        image: "https://picsum.photos/seed/403/200/150",
+        imageHint: "doctor consultation",
+    },
+    {
+        title: "Health Insurance",
+        description: "Explore Plans",
+        icon: ShieldCheck,
+        href: "/#",
+        image: "https://picsum.photos/seed/404/200/150",
+        imageHint: "insurance document",
+    },
+    {
+        title: "Lab Tests",
+        description: "AT HOME",
+        icon: Microscope,
+        href: "/#",
+        image: "https://picsum.photos/seed/405/200/150",
+        imageHint: "lab test",
+    },
+];
+
 
 export default function Home() {
   return (
     <div className="flex flex-col">
+      <section className="py-12 bg-card">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {featureCards.map((card) => (
+              <Link href={card.href} key={card.title}>
+                 <Card className="flex flex-col items-center text-center p-3 hover:shadow-lg transition-shadow h-full justify-between">
+                    <Image
+                        src={card.image}
+                        alt={card.title}
+                        width={80}
+                        height={60}
+                        className="mb-2 rounded-md object-cover"
+                        data-ai-hint={card.imageHint}
+                    />
+                    <div className="flex-grow flex flex-col justify-center">
+                        <p className="text-sm font-semibold">{card.title}</p>
+                    </div>
+                    <Button variant="link" className="mt-1 p-0 h-auto text-primary">{card.description}</Button>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="relative w-full py-20 md:py-32 lg:py-40 bg-card">
         <Image
           src="https://picsum.photos/seed/100/1600/600"
