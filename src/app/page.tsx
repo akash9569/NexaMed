@@ -271,13 +271,6 @@ export default function Home() {
         </div>
       </section>
 
-      <ProductCarousel title="Value Deals at Rs 100" products={valueDeals} viewAllHref="/shop" />
-      <ProductCarousel title="Minimum 50 Percent Off" products={fiftyOffDeals} viewAllHref="/shop" />
-      
-      <ProductCarousel title="Full body health checkups" products={healthCheckups} viewAllHref="/health-checkups" />
-      <BrandsCarousel title="Featured brands" brands={featuredBrands} viewAllHref="/brands" />
-      <CategoryCarousel title="Personal care" categories={personalCareCategories} viewAllHref="/personal-care" />
-
       <section id="categories" className="py-12 md:py-20">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-headline font-bold text-center mb-8">
@@ -305,36 +298,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-card">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-headline font-bold text-center mb-8">
-            Our Top-Selling Products
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {medications.slice(0, 4).map((med) => (
-               <Link href={`/medication/${med.id}`} key={med.id} className="block">
-                <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full">
-                  <Image
-                    src={med.imageUrl}
-                    alt={med.name}
-                    width={400}
-                    height={300}
-                    className="w-full h-48 object-cover"
-                    data-ai-hint={med.imageHint}
-                  />
-                  <CardHeader>
-                    <CardTitle>{med.name}</CardTitle>
-                    <CardDescription>{formatCurrency(med.price)}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <Button className="w-full">View Details</Button>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProductCarousel title="Value Deals at Rs 100" products={valueDeals} viewAllHref="/shop" />
+      <ProductCarousel title="Minimum 50 Percent Off" products={fiftyOffDeals} viewAllHref="/shop" />
+      
+      <ProductCarousel title="Full body health checkups" products={healthCheckups} viewAllHref="/health-checkups" />
+      <BrandsCarousel title="Featured brands" brands={featuredBrands} viewAllHref="/brands" />
+      <CategoryCarousel title="Personal care" categories={personalCareCategories} viewAllHref="/personal-care" />
     </div>
   );
 }
