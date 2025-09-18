@@ -26,9 +26,7 @@ export default function HealthConditionsPage() {
                     className="mb-4 rounded-full object-cover"
                     data-ai-hint={condition.imageHint}
                   />
-                  <CardHeader className="p-0">
-                    <CardTitle className="text-lg font-semibold">{condition.name}</CardTitle>
-                  </CardHeader>
+                  <p className="text-lg font-semibold">{condition.name}</p>
                 </Card>
               </Link>
             ))}
