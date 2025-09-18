@@ -1,4 +1,4 @@
-import type { Medication, Condition } from './types';
+import type { Medication, Condition, Doctor } from './types';
 
 export const medications: Medication[] = [
   {
@@ -190,4 +190,61 @@ export const conditions: Condition[] = [
     symptoms: [],
     treatments: [],
   },
+];
+
+export const doctors: Doctor[] = [
+  {
+    id: 'doc-1',
+    name: 'Dr. Anjali Sharma',
+    specialty: 'Cardiologist',
+    experience: 15,
+    location: 'Bengaluru',
+    imageUrl: 'https://picsum.photos/seed/doc1/200/200',
+    imageHint: 'female doctor smiling'
+  },
+  {
+    id: 'doc-2',
+    name: 'Dr. Vikram Singh',
+    specialty: 'Dermatologist',
+    experience: 10,
+    location: 'Mumbai',
+    imageUrl: 'https://picsum.photos/seed/doc2/200/200',
+    imageHint: 'male doctor glasses'
+  },
+  {
+    id: 'doc-3',
+    name: 'Dr. Priya Desai',
+    specialty: 'Pediatrician',
+    experience: 12,
+    location: 'Delhi',
+    imageUrl: 'https://picsum.photos/seed/doc3/200/200',
+    imageHint: 'doctor with child'
+  },
+  {
+    id: 'doc-4',
+    name: 'Dr. Rohan Gupta',
+    specialty: 'Orthopedic Surgeon',
+    experience: 20,
+    location: 'Bengaluru',
+    imageUrl: 'https://picsum.photos/seed/doc4/200/200',
+    imageHint: 'male surgeon serious'
+  },
+  {
+    id: 'doc-5',
+    name: 'Dr. Meera Krishnan',
+    specialty: 'Gynecologist',
+    experience: 18,
+    location: 'Chennai',
+    imageUrl: 'https://picsum.photos/seed/doc5/200/200',
+    imageHint: 'female doctor professional'
+  },
+  {
+    id: 'doc-6',
+    name: 'Dr. Sameer Joshi',
+    specialty: 'Neurologist',
+    experience: 14,
+    location: 'Pune',
+    imageUrl: 'https://picsum.photos/seed/doc6/200/200',
+    imageHint: 'male doctor thinking'
+  }
 ];
