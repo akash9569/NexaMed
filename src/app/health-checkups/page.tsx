@@ -1,7 +1,11 @@
+"use client";
+
+import { useCart } from '@/context/cart-context';
+import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter, CardDescription } from '@/components/ui/card';
 import { formatCurrency } from '@/lib/utils';
-import { ShieldCheck, Check } from 'lucide-react';
+import { Check } from 'lucide-react';
 import Image from 'next/image';
 
 const healthPackages = [
@@ -74,6 +78,23 @@ const healthPackages = [
 ];
 
 export default function HealthCheckupsPage() {
+  const { addToCart } = useCart();
+  const { toast } = useToast();
+
+  const handleBookNow = (pkg: (typeof healthPackages)[0]) => {
+    addToCart({
+      id: pkg.id,
+      name: pkg.name,
+      price: pkg.price,
+      quantity: 1,
+      imageUrl: pkg.imageUrl
+    });
+    toast({
+      title: "Package added to cart",
+      description: `${pkg.name} has been added to your cart.`,
+    });
+  };
+
   return (
     <div className="container mx-auto px-4 md:px-6 py-8 md:py-12">
       <div className="text-center mb-12">
@@ -122,7 +143,7 @@ export default function HealthCheckupsPage() {
                         <span className="text-2xl font-bold">{formatCurrency(pkg.price)}</span>
                         <span className="text-muted-foreground line-through">{formatCurrency(pkg.mrp)}</span>
                     </div>
-                    <Button className="w-full">Book Now</Button>
+                    <Button className="w-full" onClick={() => handleBookNow(pkg)}>Book Now</Button>
                 </CardFooter>
             </Card>
         ))}
