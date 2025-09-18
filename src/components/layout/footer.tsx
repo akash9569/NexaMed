@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PillWiseLogo } from "../icons";
+import { NexaMedLogo } from "../icons";
 
 export function Footer() {
   return (
@@ -7,11 +7,11 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
-            <PillWiseLogo className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline">PillWise</span>
+            <NexaMedLogo className="h-6 w-6 text-primary" />
+            <span className="font-bold font-headline">NexaMed</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} PillWise. All rights reserved.
+            © {new Date().getFullYear()} NexaMed. All rights reserved.
           </p>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-xs text-muted-foreground">

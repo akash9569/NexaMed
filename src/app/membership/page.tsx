@@ -84,7 +84,7 @@ export default function MembershipPage() {
       <div className="container mx-auto px-4 md:px-6 py-8 md:py-12 lg:py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight">
-            PillWise Circle Membership
+            NexaMed Circle Membership
           </h1>
           <p className="text-lg text-muted-foreground mt-3 max-w-3xl mx-auto">
             Unlock exclusive benefits, greater savings, and personalized care with our membership program.

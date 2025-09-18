@@ -6,8 +6,8 @@ import { Footer } from '@/components/layout/footer';
 import { CartProvider } from '@/context/cart-context';
 
 export const metadata: Metadata = {
-  title: 'PillWise',
-  description: 'Your friendly guide to medications and health conditions.',
+  title: 'NexaMed',
+  description: 'Your trusted partner in health and wellness.',
 };
 
 export default function RootLayout({

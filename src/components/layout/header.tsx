@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Menu, ShoppingCart, ChevronDown, Percent, MapPin, UserCircle } from 'lucide-react';
-import { PillWiseLogo } from '../icons';
+import { NexaMedLogo } from '../icons';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { useCart } from '@/context/cart-context';
@@ -62,8 +62,8 @@ export function Header() {
                 <SheetHeader className="text-left pl-6">
                   <SheetTitle>
                     <Link href="/" className="flex items-center space-x-2">
-                        <PillWiseLogo className="h-6 w-6 text-primary" />
-                        <span className="font-bold font-headline">PillWise</span>
+                        <NexaMedLogo className="h-6 w-6 text-primary" />
+                        <span className="font-bold font-headline">NexaMed</span>
                     </Link>
                   </SheetTitle>
                 </SheetHeader>
@@ -94,9 +94,9 @@ export function Header() {
             </Sheet>
 
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <PillWiseLogo className="h-8 w-8 text-primary" />
+            <NexaMedLogo className="h-8 w-8 text-primary" />
             <span className="hidden font-bold sm:inline-block font-headline text-2xl">
-              PillWise
+              NexaMed
             </span>
           </Link>
 
