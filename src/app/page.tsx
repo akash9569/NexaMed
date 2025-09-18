@@ -73,7 +73,7 @@ const ProductCarousel = ({ title, products, viewAllHref }: { title: string, prod
                     {products.map((product, index) => (
                         <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
                             <Card className="h-full overflow-hidden transition-shadow hover:shadow-lg">
-                                <Link href={`/medication/${product.id}`} className="block">
+                                <Link href={product.href || `/medication/${product.id}`} className="block">
                                     <div className="p-4 bg-white relative">
                                         {product.tag && (
                                             <Badge className="absolute top-2 left-2 z-10" variant={product.tag === 'Bestseller' ? 'destructive' : 'default'}>{product.tag}</Badge>
@@ -100,9 +100,9 @@ const ProductCarousel = ({ title, products, viewAllHref }: { title: string, prod
                                         </div>
                                     </CardContent>
                                 </Link>
-                                <CardContent className="p-4 pt-0">
+                                {product.showAddToCart && <CardContent className="p-4 pt-0">
                                     <Button className="w-full">ADD</Button>
-                                </CardContent>
+                                </CardContent>}
                             </Card>
                         </CarouselItem>
                     ))}
@@ -115,9 +115,110 @@ const ProductCarousel = ({ title, products, viewAllHref }: { title: string, prod
 );
 
 
+const BrandsCarousel = ({ title, brands, viewAllHref }: { title: string, brands: any[], viewAllHref: string }) => (
+    <section className="py-12">
+        <div className="container mx-auto px-4 md:px-6">
+            <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl font-bold">{title}</h2>
+                <Button variant="link" asChild>
+                    <Link href={viewAllHref}>View All <ChevronRight className="h-4 w-4 ml-1" /></Link>
+                </Button>
+            </div>
+            <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                <CarouselContent>
+                    {brands.map((brand, index) => (
+                        <CarouselItem key={index} className="basis-1/4 md:basis-1/6 lg:basis-1/8">
+                            <Link href="#" className="block">
+                                <Card className="flex items-center justify-center p-4 aspect-square rounded-full hover:shadow-lg transition-shadow">
+                                    <Image
+                                        src={brand.logoUrl}
+                                        alt={brand.name}
+                                        width={100}
+                                        height={100}
+                                        className="object-contain"
+                                        data-ai-hint={brand.imageHint}
+                                    />
+                                </Card>
+                            </Link>
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
+                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
+            </Carousel>
+        </div>
+    </section>
+);
+
+const CategoryCarousel = ({ title, categories, viewAllHref }: { title: string, categories: any[], viewAllHref: string }) => (
+    <section className="py-12">
+        <div className="container mx-auto px-4 md:px-6">
+            <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl font-bold">{title}</h2>
+                <Button variant="link" asChild>
+                    <Link href={viewAllHref}>View All <ChevronRight className="h-4 w-4 ml-1" /></Link>
+                </Button>
+            </div>
+            <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                <CarouselContent>
+                    {categories.map((category, index) => (
+                        <CarouselItem key={index} className="basis-1/3 md:basis-1/5 lg:basis-1/7">
+                            <Link href="#" className="block">
+                                <Card className="hover:shadow-lg transition-shadow">
+                                    <CardContent className="p-0">
+                                        <div className={`aspect-square flex items-center justify-center p-4 rounded-t-lg ${category.bgColor}`}>
+                                            <Image
+                                                src={category.imageUrl}
+                                                alt={category.name}
+                                                width={120}
+                                                height={120}
+                                                className="object-contain"
+                                                data-ai-hint={category.imageHint}
+                                            />
+                                        </div>
+                                        <p className="text-center font-semibold p-2 text-sm">{category.name}</p>
+                                    </CardContent>
+                                </Card>
+                            </Link>
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
+                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
+            </Carousel>
+        </div>
+    </section>
+);
+
 export default function Home() {
-    const valueDeals = medications.slice(0, 5).map((med, i) => ({ ...med, mrp: med.price * 1.6, discount: 38, tag: i === 1 ? 'Bestseller' : 'Buy 1 Get 1' }));
-    const fiftyOffDeals = medications.slice(1, 6).map((med, i) => ({ ...med, mrp: med.price * 2, discount: 50, tag: i === 1 ? 'Bestseller' : 'Buy 2, +2% OFF'  }));
+    const valueDeals = medications.slice(0, 5).map((med, i) => ({ ...med, mrp: med.price * 1.6, discount: 38, tag: i === 1 ? 'Bestseller' : 'Buy 1 Get 1', showAddToCart: true }));
+    const fiftyOffDeals = medications.slice(1, 6).map((med, i) => ({ ...med, mrp: med.price * 2, discount: 50, tag: i === 1 ? 'Bestseller' : 'Buy 2, +2% OFF', showAddToCart: true }));
+    const healthCheckups = [
+        { id: 'gold-checkup', name: 'Comprehensive Gold Full Body Checkup', price: 2249, mrp: 4498, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/601/200/200', imageHint: 'health checkup', showAddToCart: false, href: '#' },
+        { id: 'silver-checkup', name: 'Good Health Silver Package', price: 699, mrp: 1398, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/602/200/200', imageHint: 'health package', showAddToCart: false, href: '#' },
+        { id: 'silver-full-checkup', name: 'Comprehensive Silver Full Body Checkup', price: 1899, mrp: 3798, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/603/200/200', imageHint: 'medical checkup', showAddToCart: false, href: '#' },
+        { id: 'platinum-checkup', name: 'Comprehensive Platinum Full Body Checkup', price: 3599, mrp: 7198, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/604/200/200', imageHint: 'premium health check', showAddToCart: false, href: '#' },
+        { id: 'good-health-checkup', name: 'Good Health Platinum Package', price: 1499, mrp: 2998, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/605/200/200', imageHint: 'wellness package', showAddToCart: false, href: '#' },
+    ];
+    const featuredBrands = [
+        { name: 'Optimum Nutrition', logoUrl: 'https://picsum.photos/seed/701/100/100', imageHint: 'ON logo' },
+        { name: 'Nicotex', logoUrl: 'https://picsum.photos/seed/702/100/100', imageHint: 'Nicotex logo' },
+        { name: 'HealthKart', logoUrl: 'https://picsum.photos/seed/703/100/100', imageHint: 'HealthKart logo' },
+        { name: 'Saffola', logoUrl: 'https://picsum.photos/seed/704/100/100', imageHint: 'Saffola logo' },
+        { name: 'Cetaphil', logoUrl: 'https://picsum.photos/seed/705/100/100', imageHint: 'Cetaphil logo' },
+        { name: 'Miduty', logoUrl: 'https://picsum.photos/seed/706/100/100', imageHint: 'Miduty logo' },
+        { name: 'Pilgrim', logoUrl: 'https://picsum.photos/seed/707/100/100', imageHint: 'Pilgrim logo' },
+    ];
+    const personalCareCategories = [
+        { name: 'Skin Care', imageUrl: 'https://picsum.photos/seed/801/120/120', imageHint: 'skin care products', bgColor: 'bg-green-100' },
+        { name: 'Hair Care', imageUrl: 'https://picsum.photos/seed/802/120/120', imageHint: 'hair care products', bgColor: 'bg-blue-100' },
+        { name: 'Sexual Wellness', imageUrl: 'https://picsum.photos/seed/803/120/120', imageHint: 'sexual wellness products', bgColor: 'bg-orange-100' },
+        { name: 'Oral Care', imageUrl: 'https://picsum.photos/seed/804/120/120', imageHint: 'oral care products', bgColor: 'bg-red-100' },
+        { name: 'Elderly Care', imageUrl: 'https://picsum.photos/seed/805/120/120', imageHint: 'elderly care products', bgColor: 'bg-teal-100' },
+        { name: 'Baby Care', imageUrl: 'https://picsum.photos/seed/806/120/120', imageHint: 'baby care products', bgColor: 'bg-purple-100' },
+        { name: 'Women Care', imageUrl: 'https://picsum.photos/seed/807/120/120', imageHint: 'women care products', bgColor: 'bg-pink-100' },
+    ];
+
 
   return (
     <div className="flex flex-col">
@@ -125,7 +226,7 @@ export default function Home() {
         <Image
           src="https://picsum.photos/seed/100/1600/600"
           alt="Abstract background of pills and bottles"
-          layout="fill"
+          fill
           objectFit="cover"
           className="opacity-10 dark:opacity-20"
           data-ai-hint="pills bottles"
@@ -172,6 +273,10 @@ export default function Home() {
 
       <ProductCarousel title="Value Deals at Rs 100" products={valueDeals} viewAllHref="/shop" />
       <ProductCarousel title="Minimum 50 Percent Off" products={fiftyOffDeals} viewAllHref="/shop" />
+      
+      <ProductCarousel title="Full body health checkups" products={healthCheckups} viewAllHref="/health-checkups" />
+      <BrandsCarousel title="Featured brands" brands={featuredBrands} viewAllHref="/brands" />
+      <CategoryCarousel title="Personal care" categories={personalCareCategories} viewAllHref="/personal-care" />
 
       <section id="categories" className="py-12 md:py-20">
         <div className="container mx-auto px-4 md:px-6">
