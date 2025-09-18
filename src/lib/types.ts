@@ -70,3 +70,56 @@ export type NutritionProduct = {
   imageUrl: string;
   imageHint: string;
 };
+
+export type AyurvedaProduct = {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  imageHint: string;
+};
+
+export type Brand = {
+  id: string;
+  name: string;
+  logoUrl: string;
+  imageHint: string;
+  description: string;
+};
+
+export type HealthDevice = {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  imageHint: string;
+};
+
+export type HomeEssential = {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  imageHint: string;
+};
+
+export type WomenCareProduct = {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  imageHint: string;
+};
+
+export type PersonalCareProduct = {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  imageHint: string;
+};
