@@ -60,6 +60,30 @@ const featureCards = [
 export default function Home() {
   return (
     <div className="flex flex-col">
+      <section className="relative w-full py-20 md:py-32 lg:py-40 bg-card">
+        <Image
+          src="https://picsum.photos/seed/100/1600/600"
+          alt="Abstract background of pills and bottles"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-10 dark:opacity-20"
+          data-ai-hint="pills bottles"
+        />
+        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold tracking-tighter mb-4">
+              Your Health, Clarified.
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              Find comprehensive information on medications and health conditions.
+            </p>
+            <div className="max-w-xl mx-auto">
+              <SearchForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 bg-card">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -81,30 +105,6 @@ export default function Home() {
                 </Card>
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="relative w-full py-20 md:py-32 lg:py-40 bg-card">
-        <Image
-          src="https://picsum.photos/seed/100/1600/600"
-          alt="Abstract background of pills and bottles"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-10 dark:opacity-20"
-          data-ai-hint="pills bottles"
-        />
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold tracking-tighter mb-4">
-              Your Health, Clarified.
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Find comprehensive information on medications and health conditions.
-            </p>
-            <div className="max-w-xl mx-auto">
-              <SearchForm />
-            </div>
           </div>
         </div>
       </section>
