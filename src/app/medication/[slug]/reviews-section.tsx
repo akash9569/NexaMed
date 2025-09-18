@@ -27,6 +27,7 @@ import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
 import type { Medication, Review } from "@/lib/types";
 import { MessageSquare, Star as StarIcon } from "lucide-react";
+import { submitReviewAction, type ReviewFormValues } from "./actions";
 
 const reviewSchema = z.object({
   author: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -34,14 +35,6 @@ const reviewSchema = z.object({
   comment: z.string().min(10, { message: "Comment must be at least 10 characters." }),
 });
 
-type ReviewFormValues = z.infer<typeof reviewSchema>;
-
-async function submitReviewAction(data: ReviewFormValues) {
-    "use server";
-    console.log("New review submitted:", data);
-    // In a real app, you would save this to a database.
-    return { success: true, message: "Thank you for your review!" };
-}
 
 export default function ReviewsSection({ medication }: { medication: Medication }) {
   const { toast } = useToast();

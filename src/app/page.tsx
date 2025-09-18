@@ -10,6 +10,7 @@ import { SearchForm } from '@/components/search-form';
 import { conditions, medications } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
+import { formatCurrency } from '@/lib/utils';
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 md:py-20">
+      <section id="categories" className="py-12 md:py-20">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-headline font-bold text-center mb-8">
             Shop by Health Concern
@@ -84,7 +85,7 @@ export default function Home() {
                   />
                   <CardHeader>
                     <CardTitle>{med.name}</CardTitle>
-                    <CardDescription>₹{med.price.toFixed(2)}</CardDescription>
+                    <CardDescription>{formatCurrency(med.price)}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Button className="w-full">View Details</Button>

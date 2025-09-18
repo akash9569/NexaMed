@@ -10,7 +10,7 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/#shop', label: 'Shop' },
+  { href: '/shop', label: 'Shop' },
   { href: '/#categories', label: 'Categories' },
   { href: '/#about-us', label: 'About Us' },
   { href: '/pharmacy-locator', label: 'Pharmacy Locator' },
@@ -36,9 +36,7 @@ export function Header() {
                 href={href}
                 className={cn(
                   'transition-colors hover:text-foreground/80',
-                  (pathname === href || (href.includes('#') && pathname === '/'))
-                    ? 'text-foreground'
-                    : 'text-foreground/60'
+                  pathname === href ? 'text-foreground' : 'text-foreground/60'
                 )}
               >
                 {label}
