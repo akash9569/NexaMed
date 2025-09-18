@@ -1,11 +1,18 @@
+"use client";
+
+import { useCart } from '@/context/cart-context';
+import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import { Check } from 'lucide-react';
+import { formatCurrency } from '@/lib/utils';
 
 const membershipTiers = [
   {
-    name: 'Silver',
-    price: 'Free',
+    id: 'silver-membership',
+    name: 'Silver Membership',
+    price: 0,
+    priceString: 'Free',
     period: '',
     description: 'The essentials to get you started on your health journey.',
     features: [
@@ -15,10 +22,13 @@ const membershipTiers = [
     ],
     buttonText: 'Sign Up for Free',
     variant: 'secondary' as const,
+    imageUrl: 'https://picsum.photos/seed/membership1/100/100'
   },
   {
-    name: 'Gold',
-    price: 'Rs. 299',
+    id: 'gold-membership',
+    name: 'Gold Membership',
+    price: 299,
+    priceString: 'Rs. 299',
     period: '/ year',
     description: 'Unlock greater savings and exclusive consultations.',
     features: [
@@ -29,10 +39,13 @@ const membershipTiers = [
     ],
     buttonText: 'Choose Gold',
     variant: 'default' as const,
+    imageUrl: 'https://picsum.photos/seed/membership2/100/100'
   },
   {
-    name: 'Platinum',
-    price: 'Rs. 599',
+    id: 'platinum-membership',
+    name: 'Platinum Membership',
+    price: 599,
+    priceString: 'Rs. 599',
     period: '/ year',
     description: 'The ultimate care package for you and your family.',
     features: [
@@ -43,11 +56,29 @@ const membershipTiers = [
     ],
     buttonText: 'Choose Platinum',
     variant: 'default' as const,
+    imageUrl: 'https://picsum.photos/seed/membership3/100/100'
   },
 ];
 
 
 export default function MembershipPage() {
+  const { addToCart } = useCart();
+  const { toast } = useToast();
+
+  const handleChoosePlan = (tier: (typeof membershipTiers)[0]) => {
+    addToCart({
+      id: tier.id,
+      name: tier.name,
+      price: tier.price,
+      quantity: 1,
+      imageUrl: tier.imageUrl,
+    });
+    toast({
+      title: "Membership Added",
+      description: `The ${tier.name} has been added to your cart.`,
+    });
+  };
+  
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 md:px-6 py-8 md:py-12 lg:py-16">
@@ -67,7 +98,7 @@ export default function MembershipPage() {
                 <CardTitle className="text-2xl font-bold">{tier.name}</CardTitle>
                 <CardDescription>{tier.description}</CardDescription>
                 <div className="pt-4">
-                  <span className="text-4xl font-extrabold tracking-tight">{tier.price}</span>
+                  <span className="text-4xl font-extrabold tracking-tight">{tier.priceString}</span>
                   <span className="text-sm font-medium text-muted-foreground">{tier.period}</span>
                 </div>
               </CardHeader>
@@ -82,7 +113,7 @@ export default function MembershipPage() {
                 </ul>
               </CardContent>
               <CardFooter className="p-6 mt-auto">
-                <Button className="w-full" variant={tier.variant}>
+                <Button className="w-full" variant={tier.variant} onClick={() => handleChoosePlan(tier)}>
                   {tier.buttonText}
                 </Button>
               </CardFooter>
