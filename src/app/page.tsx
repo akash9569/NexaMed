@@ -222,31 +222,28 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative w-full py-20 md:py-32 lg:py-40 bg-card">
+       <section className="relative w-full pt-12 pb-16 md:pt-16 md:pb-20 bg-card">
         <Image
-          src="https://picsum.photos/seed/100/1600/600"
+          src="https://picsum.photos/seed/100/1600/400"
           alt="Abstract background of pills and bottles"
           fill
           objectFit="cover"
-          className="opacity-10 dark:opacity-20"
+          className="opacity-10 dark:opacity-20 z-0"
           data-ai-hint="pills bottles"
         />
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold tracking-tighter mb-4">
-              Your Health, Clarified.
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Find comprehensive information on medications and health conditions.
-            </p>
-            <div className="max-w-xl mx-auto">
-              <SearchForm />
+         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
+            <div className="max-w-3xl mx-auto">
+                 <h1 className="text-3xl md:text-4xl font-headline font-bold tracking-tighter mb-4">
+                    Buy Medicines and Essentials
+                </h1>
+                <div className="max-w-xl mx-auto">
+                    <SearchForm />
+                </div>
             </div>
-          </div>
         </div>
       </section>
 
-      <section className="py-12 bg-card">
+      <section className="py-12 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {featureCards.map((card) => (
@@ -271,10 +268,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="categories" className="py-12 md:py-20">
+      <section id="categories" className="py-12 md:py-20 bg-card">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-headline font-bold text-center mb-8">
-            Shop by Health Concern
+            Browse by Health Conditions
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {conditions.map((condition) => (
