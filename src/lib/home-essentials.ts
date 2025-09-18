@@ -1,3 +1,4 @@
+
 import type { HomeEssential } from './types';
 
 export const homeEssentials: HomeEssential[] = [
@@ -17,7 +18,6 @@ export const homeEssentials: HomeEssential[] = [
     imageUrl: 'https://picsum.photos/seed/he2/400/300',
     imageHint: 'surface cleaner bottle',
   },
-_PRODUCT_TEMPLATE = """
   {
     id: 'savlon-hand-sanitizer',
     name: 'Savlon Hand Sanitizer',
@@ -123,4 +123,3 @@ _PRODUCT_TEMPLATE = """
     imageHint: 'dishwashing soap bar',
   },
 ];
-"""
