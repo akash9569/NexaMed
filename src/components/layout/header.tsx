@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
-import { Menu, ShoppingCart, ChevronDown, Percent, MapPin, UserCircle } from 'lucide-react';
+import { Menu, ShoppingCart, ChevronDown, Percent, MapPin, UserCircle, PlusCircle } from 'lucide-react';
 import { NexaMedLogo } from '../icons';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -14,6 +14,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useState } from 'react';
@@ -120,6 +121,11 @@ export function Header() {
                       {address}
                     </DropdownMenuItem>
                   ))}
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem onSelect={() => alert('Add new address clicked!')}>
+                    <PlusCircle className="mr-2 h-4 w-4" />
+                    Add New Address
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
              </DropdownMenu>
           </div>
