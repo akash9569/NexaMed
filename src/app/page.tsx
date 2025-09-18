@@ -114,8 +114,8 @@ export default function Home() {
           <h2 className="text-3xl font-headline font-bold text-center mb-8">
             Shop by Health Concern
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {conditions.slice(0, 4).map((condition) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+            {conditions.map((condition) => (
               <Link href={`/condition/${condition.id}`} key={condition.id}>
                 <Card className="flex flex-col items-center text-center p-4 hover:shadow-lg transition-shadow h-full">
                   <Image
@@ -123,7 +123,7 @@ export default function Home() {
                     alt={condition.name}
                     width={80}
                     height={80}
-                    className="mb-4 rounded-full"
+                    className="mb-4 rounded-full object-cover"
                     data-ai-hint={condition.imageHint}
                   />
                   <CardHeader className="p-0">
