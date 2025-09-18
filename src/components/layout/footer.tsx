@@ -13,6 +13,7 @@ export function Footer() {
   ];
   
   const quickLinks = [
+    { name: "About Us", href: "/about" },
     { name: "Find Doctors", href: "/find-doctors" },
     { name: "Health Checkups", href: "/health-checkups" },
     { name: "Health Records", href: "/health-records" },
