@@ -61,3 +61,12 @@ export type BabyCareProduct = {
   imageUrl: string;
   imageHint: string;
 };
+
+export type NutritionProduct = {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  imageHint: string;
+};

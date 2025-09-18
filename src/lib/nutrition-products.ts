@@ -1,0 +1,68 @@
+import type { NutritionProduct } from './types';
+
+export const nutritionProducts: NutritionProduct[] = [
+  {
+    id: 'ensure-plus',
+    name: 'Ensure Plus Nutrition Shake',
+    description: 'Complete, balanced nutrition to help gain or maintain a healthy weight. Vanilla flavor, 1kg.',
+    price: 1100,
+    imageUrl: 'https://picsum.photos/seed/np1/400/300',
+    imageHint: 'nutrition powder tin',
+  },
+  {
+    id: 'horlicks-classic',
+    name: 'Horlicks Classic Malt',
+    description: 'Health drink that has nutrients to support immunity. 500g jar.',
+    price: 250,
+    imageUrl: 'https://picsum.photos/seed/np2/400/300',
+    imageHint: 'malt drink jar',
+  },
+  {
+    id: 'protinex-original',
+    name: 'Protinex Original Nutrition Drink',
+    description: 'A vegetarian, ready-to-serve beverage mix that helps in bridging the protein gap in the diet. 400g.',
+    price: 550,
+    imageUrl: 'https://picsum.photos/seed/np3/400/300',
+    imageHint: 'protein powder container',
+  },
+  {
+    id: 'pediasure-vanilla',
+    name: 'PediaSure Vanilla Delight',
+    description: 'Complete & balanced nutrition supplement for children of the age group (2 years and above). 400g.',
+    price: 600,
+    imageUrl: 'https://picsum.photos/seed/np4/400/300',
+    imageHint: 'kids nutrition powder',
+  },
+  {
+    id: 'revital-h',
+    name: 'Revital H Multivitamin Capsules',
+    description: 'A balanced combination of 10 vitamins, 9 minerals and ginseng for your daily energy needs. 60 capsules.',
+    price: 450,
+    imageUrl: 'https://picsum.photos/seed/np5/400/300',
+    imageHint: 'multivitamin capsules bottle',
+  },
+  {
+    id: 'optimum-whey-protein',
+    name: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein',
+    description: '24g of whey protein per serving with whey protein isolates as the primary ingredient. Double Rich Chocolate, 2 lbs.',
+    price: 3500,
+    imageUrl: 'https://picsum.photos/seed/np6/400/300',
+    imageHint: 'whey protein tub',
+  },
+  {
+    id: 'seven-seas-cod-liver-oil',
+    name: 'Seven Seas Original Cod-Liver Oil Capsules',
+    description: 'Rich source of Omega-3 with EPA & DHA, Vitamin A and Vitamin D. 100 capsules.',
+    price: 320,
+    imageUrl: 'https://picsum.photos/seed/np7/400/300',
+    imageHint: 'fish oil capsules',
+  },
+  {
+    id: 'complan-chocolate',
+    name: 'Complan Nutrition and Health Drink - Royale Chocolate',
+    description: 'Clinically proven to promote 2x faster growth. Contains 34 vital nutrients. 500g.',
+    price: 300,
+    imageUrl: 'https://picsum.photos/seed/np8/400/300',
+    imageHint: 'chocolate health drink',
+  },
+];
