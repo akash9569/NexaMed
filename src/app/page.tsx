@@ -110,8 +110,8 @@ const ProductCarousel = ({ title, products, viewAllHref }: { title: string, prod
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md -translate-x-1/2" />
+                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md translate-x-1/2" />
             </Carousel>
         </div>
     </section>
@@ -148,8 +148,8 @@ const BrandsCarousel = ({ title, brands, viewAllHref }: { title: string, brands:
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md -translate-x-1/2" />
+                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md translate-x-1/2" />
             </Carousel>
         </div>
     </section>
@@ -190,8 +190,8 @@ const CategoryCarousel = ({ title, categories, viewAllHref }: { title: string, c
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md -translate-x-1/2" />
+                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md translate-x-1/2" />
             </Carousel>
         </div>
     </section>
@@ -311,3 +311,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
