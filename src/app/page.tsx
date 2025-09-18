@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -64,9 +65,11 @@ const ProductCarousel = ({ title, products, viewAllHref }: { title: string, prod
         <div className="container mx-auto px-4 md:px-6">
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold">{title}</h2>
-                <Button variant="link" asChild>
-                    <Link href={viewAllHref}>View All <ChevronRight className="h-4 w-4 ml-1" /></Link>
-                </Button>
+                 <div className="flex items-center gap-2">
+                    <Button variant="link" asChild>
+                        <Link href={viewAllHref}>View All <ChevronRight className="h-4 w-4 ml-1" /></Link>
+                    </Button>
+                </div>
             </div>
             <Carousel opts={{ align: "start", loop: true }} className="w-full">
                 <CarouselContent>
@@ -107,8 +110,8 @@ const ProductCarousel = ({ title, products, viewAllHref }: { title: string, prod
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
-                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
+                <CarouselPrevious />
+                <CarouselNext />
             </Carousel>
         </div>
     </section>
@@ -120,9 +123,11 @@ const BrandsCarousel = ({ title, brands, viewAllHref }: { title: string, brands:
         <div className="container mx-auto px-4 md:px-6">
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold">{title}</h2>
-                <Button variant="link" asChild>
-                    <Link href={viewAllHref}>View All <ChevronRight className="h-4 w-4 ml-1" /></Link>
-                </Button>
+                <div className="flex items-center gap-2">
+                    <Button variant="link" asChild>
+                        <Link href={viewAllHref}>View All <ChevronRight className="h-4 w-4 ml-1" /></Link>
+                    </Button>
+                </div>
             </div>
             <Carousel opts={{ align: "start", loop: true }} className="w-full">
                 <CarouselContent>
@@ -143,8 +148,8 @@ const BrandsCarousel = ({ title, brands, viewAllHref }: { title: string, brands:
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
-                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
+                <CarouselPrevious />
+                <CarouselNext />
             </Carousel>
         </div>
     </section>
@@ -155,9 +160,11 @@ const CategoryCarousel = ({ title, categories, viewAllHref }: { title: string, c
         <div className="container mx-auto px-4 md:px-6">
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold">{title}</h2>
-                <Button variant="link" asChild>
-                    <Link href={viewAllHref}>View All <ChevronRight className="h-4 w-4 ml-1" /></Link>
-                </Button>
+                 <div className="flex items-center gap-2">
+                    <Button variant="link" asChild>
+                        <Link href={viewAllHref}>View All <ChevronRight className="h-4 w-4 ml-1" /></Link>
+                    </Button>
+                </div>
             </div>
             <Carousel opts={{ align: "start", loop: true }} className="w-full">
                 <CarouselContent>
@@ -183,8 +190,8 @@ const CategoryCarousel = ({ title, categories, viewAllHref }: { title: string, c
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
-                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md" />
+                <CarouselPrevious />
+                <CarouselNext />
             </Carousel>
         </div>
     </section>
@@ -214,7 +221,7 @@ export default function Home() {
         { name: 'Hair Care', imageUrl: 'https://picsum.photos/seed/802/120/120', imageHint: 'hair care products', bgColor: 'bg-blue-100', href: "/personal-care" },
         { name: 'Sexual Wellness', imageUrl: 'https://picsum.photos/seed/803/120/120', imageHint: 'sexual wellness products', bgColor: 'bg-orange-100', href: "/women-care" },
         { name: 'Oral Care', imageUrl: 'https://picsum.photos/seed/804/120/120', imageHint: 'oral care products', bgColor: 'bg-red-100', href: "/personal-care" },
-        { name: 'Elderly Care', imageUrl: 'https://picsum.photos/seed/805/120/120', imageHint: 'elderly care products', bgColor: 'bg-teal-100', href: "/health-devices" },
+        { name: 'Elderly Care', imageUrl: 'https://picsum.photos/seed/805/120/120', imageHint: 'elderly care products', bgColor: 'bg-yellow-100', href: "/health-devices" },
         { name: 'Baby Care', imageUrl: 'https://picsum.photos/seed/806/120/120', imageHint: 'baby care products', bgColor: 'bg-purple-100', href: "/baby-care" },
         { name: 'Women Care', imageUrl: 'https://picsum.photos/seed/807/120/120', imageHint: 'women care products', bgColor: 'bg-pink-100', href: "/women-care" },
     ];
