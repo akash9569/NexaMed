@@ -37,7 +37,7 @@ const featureCards = [
         title: "Doctor Appointment",
         description: "Book Now",
         icon: Stethoscope,
-        href: "/#",
+        href: "/find-doctors",
         image: "https://picsum.photos/seed/403/200/150",
         imageHint: "doctor consultation",
     },
@@ -53,7 +53,7 @@ const featureCards = [
         title: "Lab Tests",
         description: "AT HOME",
         icon: Microscope,
-        href: "/#",
+        href: "/health-checkups",
         image: "https://picsum.photos/seed/405/200/150",
         imageHint: "lab test",
     },
@@ -163,7 +163,7 @@ const CategoryCarousel = ({ title, categories, viewAllHref }: { title: string, c
                 <CarouselContent>
                     {categories.map((category, index) => (
                         <CarouselItem key={index} className="basis-1/3 md:basis-1/5 lg:basis-1/7">
-                            <Link href="/personal-care" className="block">
+                            <Link href={category.href} className="block">
                                 <Card className="hover:shadow-lg transition-shadow">
                                     <CardContent className="p-0">
                                         <div className={`aspect-square flex items-center justify-center p-4 rounded-t-lg ${category.bgColor}`}>
@@ -210,13 +210,13 @@ export default function Home() {
         { name: 'Pilgrim', logoUrl: 'https://picsum.photos/seed/707/100/100', imageHint: 'Pilgrim logo' },
     ];
     const personalCareCategories = [
-        { name: 'Skin Care', imageUrl: 'https://picsum.photos/seed/801/120/120', imageHint: 'skin care products', bgColor: 'bg-green-100' },
-        { name: 'Hair Care', imageUrl: 'https://picsum.photos/seed/802/120/120', imageHint: 'hair care products', bgColor: 'bg-blue-100' },
-        { name: 'Sexual Wellness', imageUrl: 'https://picsum.photos/seed/803/120/120', imageHint: 'sexual wellness products', bgColor: 'bg-orange-100' },
-        { name: 'Oral Care', imageUrl: 'https://picsum.photos/seed/804/120/120', imageHint: 'oral care products', bgColor: 'bg-red-100' },
-        { name: 'Elderly Care', imageUrl: 'https://picsum.photos/seed/805/120/120', imageHint: 'elderly care products', bgColor: 'bg-teal-100' },
-        { name: 'Baby Care', imageUrl: 'https://picsum.photos/seed/806/120/120', imageHint: 'baby care products', bgColor: 'bg-purple-100' },
-        { name: 'Women Care', imageUrl: 'https://picsum.photos/seed/807/120/120', imageHint: 'women care products', bgColor: 'bg-pink-100' },
+        { name: 'Skin Care', imageUrl: 'https://picsum.photos/seed/801/120/120', imageHint: 'skin care products', bgColor: 'bg-green-100', href: "/personal-care" },
+        { name: 'Hair Care', imageUrl: 'https://picsum.photos/seed/802/120/120', imageHint: 'hair care products', bgColor: 'bg-blue-100', href: "/personal-care" },
+        { name: 'Sexual Wellness', imageUrl: 'https://picsum.photos/seed/803/120/120', imageHint: 'sexual wellness products', bgColor: 'bg-orange-100', href: "/women-care" },
+        { name: 'Oral Care', imageUrl: 'https://picsum.photos/seed/804/120/120', imageHint: 'oral care products', bgColor: 'bg-red-100', href: "/personal-care" },
+        { name: 'Elderly Care', imageUrl: 'https://picsum.photos/seed/805/120/120', imageHint: 'elderly care products', bgColor: 'bg-teal-100', href: "/health-devices" },
+        { name: 'Baby Care', imageUrl: 'https://picsum.photos/seed/806/120/120', imageHint: 'baby care products', bgColor: 'bg-purple-100', href: "/baby-care" },
+        { name: 'Women Care', imageUrl: 'https://picsum.photos/seed/807/120/120', imageHint: 'women care products', bgColor: 'bg-pink-100', href: "/women-care" },
     ];
 
 
@@ -271,7 +271,7 @@ export default function Home() {
       <section id="categories" className="py-12 md:py-20 bg-card">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-headline font-bold text-center mb-8">
-            Browse by Health Conditions
+            Shop by Health Conditions
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {conditions.map((condition) => (
