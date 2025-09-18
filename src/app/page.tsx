@@ -128,7 +128,7 @@ const BrandsCarousel = ({ title, brands, viewAllHref }: { title: string, brands:
                 <CarouselContent>
                     {brands.map((brand, index) => (
                         <CarouselItem key={index} className="basis-1/4 md:basis-1/6 lg:basis-1/8">
-                            <Link href="#" className="block">
+                            <Link href="/brands" className="block">
                                 <Card className="flex items-center justify-center p-4 aspect-square rounded-full hover:shadow-lg transition-shadow">
                                     <Image
                                         src={brand.logoUrl}
@@ -163,7 +163,7 @@ const CategoryCarousel = ({ title, categories, viewAllHref }: { title: string, c
                 <CarouselContent>
                     {categories.map((category, index) => (
                         <CarouselItem key={index} className="basis-1/3 md:basis-1/5 lg:basis-1/7">
-                            <Link href="#" className="block">
+                            <Link href="/personal-care" className="block">
                                 <Card className="hover:shadow-lg transition-shadow">
                                     <CardContent className="p-0">
                                         <div className={`aspect-square flex items-center justify-center p-4 rounded-t-lg ${category.bgColor}`}>

@@ -14,11 +14,6 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-  DropdownMenuGroup,
-  DropdownMenuSeparator,
-  DropdownMenuSub,
-  DropdownMenuSubTrigger,
-  DropdownMenuSubContent
 } from "@/components/ui/dropdown-menu";
 import { ScrollArea } from '@/components/ui/scroll-area';
 
@@ -31,15 +26,15 @@ const topNavLinks = [
 ];
 
 const categoryNavLinks = [
-    { title: "Apollo Products" },
-    { title: "Baby Care" },
-    { title: "Nutritional Drinks & Supplements" },
-    { title: "Women Care" },
-    { title: "Personal Care" },
-    { title: "Ayurveda" },
-    { title: "Health Devices" },
-    { title: "Home Essentials" },
-    { title: "Health Condition" },
+    { name: "Apollo Products", href: "#" },
+    { name: "Baby Care", href: "#" },
+    { name: "Nutritional Drinks & Supplements", href: "#" },
+    { name: "Women Care", href: "#" },
+    { name: "Personal Care", href: "/personal-care" },
+    { name: "Ayurveda", href: "#" },
+    { name: "Health Devices", href: "#" },
+    { name: "Home Essentials", href: "#" },
+    { name: "Health Condition", href: "#" },
 ]
 
 
@@ -75,13 +70,14 @@ export function Header() {
                         {label}
                       </Link>
                     ))}
-                    <DropdownMenuSeparator />
+                    <DropdownMenuContent>
                      <h3 className="font-semibold px-2 py-1.5 text-primary">Shop by Category</h3>
                     {categoryNavLinks.map((menu) => (
-                      <Link key={menu.title} href="#" className="block pl-4 text-sm text-foreground/80 hover:text-foreground py-1">
-                        {menu.title}
+                      <Link key={menu.name} href={menu.href} className="block pl-4 text-sm text-foreground/80 hover:text-foreground py-1">
+                        {menu.name}
                       </Link>
                     ))}
+                    </DropdownMenuContent>
                   </div>
                 </ScrollArea>
               </SheetContent>
@@ -149,7 +145,7 @@ export function Header() {
       <div className="hidden md:flex bg-primary/90 text-primary-foreground">
         <div className="container flex items-center justify-center gap-6 text-sm font-medium">
             {categoryNavLinks.map((link) => (
-                <Link key={link.title} href="#" className="py-2.5 transition-colors hover:text-white/80">{link.title}</Link>
+                <Link key={link.name} href={link.href} className="py-2.5 transition-colors hover:text-white/80">{link.name}</Link>
             ))}
         </div>
       </div>
