@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Menu, ShoppingCart, ChevronDown, Percent, MapPin, UserCircle } from 'lucide-react';
 import { PillWiseLogo } from '../icons';
 import { usePathname } from 'next/navigation';
@@ -59,11 +59,15 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="pr-0">
-                <Link href="/" className="flex items-center space-x-2 mb-6">
-                  <PillWiseLogo className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline">PillWise</span>
-                </Link>
-                <ScrollArea className="h-[calc(100vh-8rem)]">
+                <SheetHeader className="text-left">
+                  <SheetTitle>
+                     <Link href="/" className="flex items-center space-x-2">
+                      <PillWiseLogo className="h-6 w-6 text-primary" />
+                      <span className="font-bold font-headline">PillWise</span>
+                    </Link>
+                  </SheetTitle>
+                </SheetHeader>
+                <ScrollArea className="h-[calc(100vh-8rem)] mt-6">
                   <div className="flex flex-col space-y-3 pr-6">
                     {topNavLinks.map(({ href, label }) => (
                       <Link key={label} href={href} className="font-semibold text-foreground/80 hover:text-foreground">
@@ -71,7 +75,9 @@ export function Header() {
                       </Link>
                     ))}
                     <DropdownMenu>
-                      <DropdownMenuTrigger className="font-semibold text-foreground/80 hover:text-foreground text-left">Shop by Category</DropdownMenuTrigger>
+                      <DropdownMenuTrigger className="font-semibold text-foreground/80 hover:text-foreground text-left flex items-center">
+                        Shop by Category <ChevronDown className="h-4 w-4 ml-1" />
+                      </DropdownMenuTrigger>
                       <DropdownMenuContent>
                         {categoryNavLinks.map((menu) => (
                           <DropdownMenuItem key={menu.name} asChild>
