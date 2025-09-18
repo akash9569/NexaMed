@@ -16,6 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { useState } from 'react';
 
 const topNavLinks = [
   { href: '/shop', label: 'Buy Medicines' },
@@ -42,6 +43,8 @@ export function Header() {
   const pathname = usePathname();
   const { cart } = useCart();
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const [selectedAddress, setSelectedAddress] = useState('123 Ashok Marg, Hazratganj');
+  const addresses = ['123 Ashok Marg, Hazratganj', '45 Vidhan Sabha Marg, Lalbagh', '78 Gomti Nagar Rd, Lucknow'];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -104,14 +107,19 @@ export function Header() {
             <MapPin className="h-5 w-5 text-muted-foreground" />
              <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <div className="flex flex-col items-start cursor-pointer">
+                    <div className="flex flex-col items-start cursor-pointer w-48">
                         <span className="text-xs text-muted-foreground">Delivery Address</span>
-                        <Button variant="link" className="p-0 h-auto text-sm font-semibold">Select Address <ChevronDown className="ml-1 h-4 w-4" /></Button>
+                        <Button variant="link" className="p-0 h-auto text-sm font-semibold truncate">
+                          {selectedAddress} <ChevronDown className="ml-1 h-4 w-4 flex-shrink-0" />
+                        </Button>
                     </div>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                    <DropdownMenuItem>Address 1</DropdownMenuItem>
-                    <DropdownMenuItem>Address 2</DropdownMenuItem>
+                  {addresses.map(address => (
+                    <DropdownMenuItem key={address} onSelect={() => setSelectedAddress(address)}>
+                      {address}
+                    </DropdownMenuItem>
+                  ))}
                 </DropdownMenuContent>
              </DropdownMenu>
           </div>
