@@ -1,3 +1,4 @@
+
 import type { Medication, Condition, Doctor } from './types';
 
 export const medications: Medication[] = [
@@ -238,8 +239,8 @@ export const conditions: Condition[] = [
     description: 'Products and information for managing diabetes.',
     imageUrl: 'https://picsum.photos/seed/501/80/80',
     imageHint: 'glucose meter',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Increased thirst', 'Frequent urination', 'Unexplained weight loss', 'Fatigue', 'Blurred vision'],
+    treatments: ['Blood sugar monitoring', 'Oral medications (e.g., Metformin)', 'Insulin therapy', 'Healthy diet and exercise'],
   },
   {
     id: 'cardiac-care',
@@ -247,8 +248,8 @@ export const conditions: Condition[] = [
     description: 'Support your heart health with these products.',
     imageUrl: 'https://picsum.photos/seed/502/80/80',
     imageHint: 'healthy heart',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Chest pain', 'Shortness of breath', 'High blood pressure', 'High cholesterol', 'Irregular heartbeat'],
+    treatments: ['Blood pressure medication (e.g., Losartan, Amlodipine)', 'Cholesterol-lowering drugs (e.g., Atorvastatin)', 'Lifestyle changes (diet, exercise)', 'Aspirin therapy'],
   },
   {
     id: 'stomach-care',
@@ -256,8 +257,8 @@ export const conditions: Condition[] = [
     description: 'Find relief for various digestive issues.',
     imageUrl: 'https://picsum.photos/seed/503/80/80',
     imageHint: 'stomach anatomy',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Heartburn', 'Acid reflux', 'Nausea', 'Bloating', 'Indigestion'],
+    treatments: ['Antacids', 'Proton Pump Inhibitors (e.g., Omeprazole, Pantoprazole)', 'Probiotics', 'Dietary adjustments'],
   },
   {
     id: 'pain-relief',
@@ -265,8 +266,8 @@ export const conditions: Condition[] = [
     description: 'Alleviate pain from headaches, muscle aches, and more.',
     imageUrl: 'https://picsum.photos/seed/504/80/80',
     imageHint: 'soothing balm',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Headaches', 'Muscle soreness', 'Joint pain', 'Menstrual cramps', 'Backache'],
+    treatments: ['Pain relievers (e.g., Paracetamol, Ibuprofen)', 'Topical creams and gels', 'Hot/cold packs', 'Physical therapy'],
   },
   {
     id: 'liver-care',
@@ -274,8 +275,8 @@ export const conditions: Condition[] = [
     description: 'Supplements and products to support liver function.',
     imageUrl: 'https://picsum.photos/seed/505/80/80',
     imageHint: 'liver anatomy',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Jaundice (yellow skin/eyes)', 'Fatigue', 'Abdominal swelling', 'Nausea', 'Dark urine'],
+    treatments: ['Lifestyle changes (avoid alcohol)', 'Hepatitis medications', 'Liver-support supplements (e.g., Milk Thistle)', 'Antiviral drugs'],
   },
   {
     id: 'oral-care',
@@ -283,8 +284,8 @@ export const conditions: Condition[] = [
     description: 'Everything you need for a healthy smile.',
     imageUrl: 'https://picsum.photos/seed/506/80/80',
     imageHint: 'toothbrush toothpaste',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Toothache', 'Bleeding gums', 'Bad breath', 'Cavities', 'Mouth sores'],
+    treatments: ['Regular brushing and flossing', 'Antiseptic mouthwash', 'Fluoride toothpaste', 'Dental check-ups'],
   },
   {
     id: 'respiratory',
@@ -292,8 +293,8 @@ export const conditions: Condition[] = [
     description: 'Breathe easier with our respiratory care products.',
     imageUrl: 'https://picsum.photos/seed/507/80/80',
     imageHint: 'lungs anatomy',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Coughing', 'Wheezing', 'Shortness of breath', 'Chest tightness', 'Nasal congestion'],
+    treatments: ['Inhalers (for asthma)', 'Decongestants', 'Cough syrups', 'Antihistamines (e.g., Cetirizine)', 'Nebulizers'],
   },
   {
     id: 'sexual-health',
@@ -301,8 +302,8 @@ export const conditions: Condition[] = [
     description: 'A range of products for sexual wellness.',
     imageUrl: 'https://picsum.photos/seed/508/80/80',
     imageHint: 'couple silhouette',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Erectile dysfunction', 'Low libido', 'Pain during intercourse', 'Sexually transmitted infections (STIs)'],
+    treatments: ['Contraceptives', 'Lubricants', 'Medications for ED', 'STI testing and treatment'],
   },
   {
     id: 'elderly-care',
@@ -310,8 +311,8 @@ export const conditions: Condition[] = [
     description: 'Products tailored for the needs of senior citizens.',
     imageUrl: 'https://picsum.photos/seed/509/80/80',
     imageHint: 'elderly couple',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Joint stiffness', 'Memory loss', 'Reduced mobility', 'Incontinence', 'Nutritional deficiencies'],
+    treatments: ['Mobility aids (canes, walkers)', 'Adult diapers', 'Nutritional supplements', 'Memory-support supplements'],
   },
   {
     id: 'cold-immunity',
@@ -319,8 +320,8 @@ export const conditions: Condition[] = [
     description: 'Boost your immunity and fight off the common cold.',
     imageUrl: 'https://picsum.photos/seed/510/80/80',
     imageHint: 'orange vitamin',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Runny nose', 'Sore throat', 'Sneezing', 'Fever', 'Body aches'],
+    treatments: ['Vitamin C & Zinc supplements', 'Herbal remedies (e.g., Echinacea, Tulsi)', 'Decongestants', 'Pain relievers'],
   },
   {
     id: 'skin-care',
@@ -328,8 +329,8 @@ export const conditions: Condition[] = [
     description: 'Solutions for various skin concerns like acne, dryness, and aging.',
     imageUrl: 'https://picsum.photos/seed/511/80/80',
     imageHint: 'skin cream',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Acne/Pimples', 'Dry or flaky skin', 'Eczema or rashes', 'Wrinkles', 'Dark spots'],
+    treatments: ['Cleansers and moisturizers', 'Acne creams', 'Sunscreens', 'Anti-aging serums', 'Topical ointments'],
   },
   {
     id: 'hair-care',
@@ -337,8 +338,8 @@ export const conditions: Condition[] = [
     description: 'Address hair fall, dandruff, and other scalp issues.',
     imageUrl: 'https://picsum.photos/seed/512/80/80',
     imageHint: 'hair shampoo',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Hair loss', 'Dandruff', 'Dry or brittle hair', 'Itchy scalp', 'Split ends'],
+    treatments: ['Anti-hair fall shampoos', 'Anti-dandruff shampoos', 'Hair serums and oils', 'Hair growth supplements (e.g., Biotin)'],
   },
   {
     id: 'bone-joint-care',
@@ -346,8 +347,8 @@ export const conditions: Condition[] = [
     description: 'Strengthen your bones and manage joint pain.',
     imageUrl: 'https://picsum.photos/seed/513/80/80',
     imageHint: 'human skeleton joint',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Joint pain and stiffness', 'Swelling', 'Reduced range of motion', 'Cracking or popping sounds', 'Weak bones (Osteoporosis)'],
+    treatments: ['Calcium & Vitamin D supplements', 'Anti-inflammatory drugs (e.g., Ibuprofen)', 'Joint support supplements (Glucosamine)', 'Pain relief oils and sprays'],
   },
   {
     id: 'mental-wellness',
@@ -355,17 +356,17 @@ export const conditions: Condition[] = [
     description: 'Products to help manage stress, anxiety, and sleep.',
     imageUrl: 'https://picsum.photos/seed/514/80/80',
     imageHint: 'calm brain',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Anxiety', 'Depression', 'Insomnia', 'Stress', 'Difficulty concentrating'],
+    treatments: ['Antidepressants (e.g., Sertraline)', 'Anti-anxiety medication', 'Herbal relaxants (e.g., Ashwagandha)', 'Sleep aids'],
   },
   {
     id: 'women-health',
-    name: 'Women\'s Health',
-    description: 'Specific products for women\'s health needs.',
+    name: "Women's Health",
+    description: "Specific products for women's health needs.",
     imageUrl: 'https://picsum.photos/seed/515/80/80',
     imageHint: 'female symbol',
-    symptoms: [],
-    treatments: [],
+    symptoms: ['Irregular periods', 'Menstrual cramps', 'Urinary Tract Infections (UTIs)', 'Vaginal infections', 'Menopausal symptoms'],
+    treatments: ['Feminine hygiene washes', 'Menstrual products (pads, tampons)', 'UTI remedies (Cranberry extract)', 'Hormonal supplements'],
   },
 ];
 
@@ -506,5 +507,7 @@ export const doctors: Doctor[] = [
     imageHint: 'compassionate female doctor'
   }
 ];
+
+    
 
     
