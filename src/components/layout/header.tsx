@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
-import { Menu, ShoppingCart, ChevronDown, Percent, MapPin, UserCircle, PlusCircle } from 'lucide-react';
+import { Menu, ShoppingCart, ChevronDown, Percent, MapPin, UserCircle, PlusCircle, CheckCircle } from 'lucide-react';
 import { NexaMedLogo } from '../icons';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useState } from 'react';
+import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '@/components/ui/alert-dialog';
 
 const topNavLinks = [
   { href: '/shop', label: 'Buy Medicines' },
@@ -46,8 +47,10 @@ export function Header() {
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const [selectedAddress, setSelectedAddress] = useState('123 Ashok Marg, Hazratganj');
   const addresses = ['123 Ashok Marg, Hazratganj', '45 Vidhan Sabha Marg, Lalbagh', '78 Gomti Nagar Rd, Lucknow'];
+  const [isAddAddressDialogOpen, setAddAddressDialogOpen] = useState(false);
 
   return (
+    <>
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-4">
@@ -122,7 +125,7 @@ export function Header() {
                     </DropdownMenuItem>
                   ))}
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem onSelect={() => alert('Add new address clicked!')}>
+                  <DropdownMenuItem onSelect={() => setAddAddressDialogOpen(true)}>
                     <PlusCircle className="mr-2 h-4 w-4" />
                     Add New Address
                   </DropdownMenuItem>
@@ -176,5 +179,24 @@ export function Header() {
         </div>
       </div>
     </header>
+    <AlertDialog open={isAddAddressDialogOpen} onOpenChange={setAddAddressDialogOpen}>
+        <AlertDialogContent>
+        <AlertDialogHeader>
+            <div className="flex justify-center">
+            <CheckCircle className="h-16 w-16 text-green-500" />
+            </div>
+            <AlertDialogTitle className="text-center">Feature Coming Soon!</AlertDialogTitle>
+            <AlertDialogDescription className="text-center">
+            The ability to add a new address is not yet implemented.
+            </AlertDialogDescription>
+        </AlertDialogHeader>
+        <AlertDialogFooter>
+            <AlertDialogAction onClick={() => setAddAddressDialogOpen(false)} className="w-full">
+            Got it
+            </AlertDialogAction>
+        </AlertDialogFooter>
+        </AlertDialogContent>
+    </AlertDialog>
+    </>
   );
 }
