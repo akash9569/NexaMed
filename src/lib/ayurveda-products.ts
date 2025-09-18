@@ -1,3 +1,4 @@
+
 import type { AyurvedaProduct } from './types';
 
 export const ayurvedaProducts: AyurvedaProduct[] = [
@@ -6,7 +7,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Dabur Chyawanprash',
     description: 'Awaleha for boosting immunity, with antioxidants. 1kg jar.',
     price: 350,
-    imageUrl: 'https://picsum.photos/seed/ay1/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur1/400/300',
     imageHint: 'chyawanprash jar',
   },
   {
@@ -14,7 +15,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Himalaya Ashvagandha Tablets',
     description: 'General wellness tablets, helps in stress relief. 60 tablets.',
     price: 165,
-    imageUrl: 'https://picsum.photos/seed/ay2/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur2/400/300',
     imageHint: 'herb supplement bottle',
   },
   {
@@ -22,7 +23,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Zandu Pancharishta',
     description: 'Ayurvedic digestive tonic for indigestion, gas, and acidity. 450ml.',
     price: 130,
-    imageUrl: 'https://picsum.photos/seed/ay3/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur3/400/300',
     imageHint: 'ayurvedic tonic bottle',
   },
   {
@@ -30,7 +31,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Himalaya Liv.52 DS Tablets',
     description: 'Helps protect the liver against hepatotoxins. 60 tablets.',
     price: 180,
-    imageUrl: 'https://picsum.photos/seed/ay4/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur4/400/300',
     imageHint: 'liver supplement box',
   },
   {
@@ -38,7 +39,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Baidyanath Giloy Guduchi Tablets',
     description: 'Natural immunity booster, helps in fighting infections. 60 tablets.',
     price: 200,
-    imageUrl: 'https://picsum.photos/seed/ay5/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur5/400/300',
     imageHint: 'giloy tablets bottle',
   },
   {
@@ -46,7 +47,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Dabur Honitus Herbal Cough Syrup',
     description: 'Provides effective relief from cough, without side-effects. 100ml.',
     price: 95,
-    imageUrl: 'https://picsum.photos/seed/ay6/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur6/400/300',
     imageHint: 'cough syrup bottle',
   },
   {
@@ -54,7 +55,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Himalaya Septilin Tablets',
     description: 'Builds the body\'s own defense mechanism. 60 tablets.',
     price: 170,
-    imageUrl: 'https://picsum.photos/seed/ay7/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur7/400/300',
     imageHint: 'immunity tablets box',
   },
   {
@@ -62,7 +63,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Patanjali Dant Kanti Toothpaste',
     description: 'Herbal toothpaste for dental protection. 200g.',
     price: 100,
-    imageUrl: 'https://picsum.photos/seed/ay8/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur8/400/300',
     imageHint: 'herbal toothpaste tube',
   },
   {
@@ -70,7 +71,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Baidyanath Triphala Churna',
     description: 'A classic blend for constipation and gentle bowel detox. 500g.',
     price: 250,
-    imageUrl: 'https://picsum.photos/seed/ay9/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur9/400/300',
     imageHint: 'ayurvedic powder jar',
   },
   {
@@ -78,7 +79,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Himalaya Gasex Tablets',
     description: 'For symptomatic control of dyspepsia and indigestion. 100 tablets.',
     price: 130,
-    imageUrl: 'https://picsum.photos/seed/ay10/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur10/400/300',
     imageHint: 'digestion tablets',
   },
   {
@@ -86,7 +87,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Organic India Tulsi Green Tea',
     description: 'A blend of Tulsi and Green Tea for stress relief and refreshment. 25 tea bags.',
     price: 190,
-    imageUrl: 'https://picsum.photos/seed/ay11/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur11/400/300',
     imageHint: 'herbal tea box',
   },
   {
@@ -94,7 +95,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Kottakkal Balaswagandhadi Thailam',
     description: 'Traditional massage oil for muscle strength and pain relief. 200ml.',
     price: 280,
-    imageUrl: 'https://picsum.photos/seed/ay12/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur12/400/300',
     imageHint: 'massage oil bottle',
   },
   {
@@ -102,7 +103,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Dabur Pudin Hara Pearls',
     description: 'Ayurvedic remedy for gas, indigestion, and stomach ache. 10 pearls.',
     price: 25,
-    imageUrl: 'https://picsum.photos/seed/ay13/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur13/400/300',
     imageHint: 'indigestion pearls pack',
   },
   {
@@ -110,7 +111,7 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Himalaya Brahmi Tablets',
     description: 'Mind wellness tablets, helps improve alertness. 60 tablets.',
     price: 160,
-    imageUrl: 'https://picsum.photos/seed/ay14/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur14/400/300',
     imageHint: 'mind wellness tablets',
   },
   {
@@ -118,7 +119,10 @@ export const ayurvedaProducts: AyurvedaProduct[] = [
     name: 'Jiva Amla Juice',
     description: 'Rich in Vitamin C, boosts immunity and promotes hair health. 1 litre.',
     price: 220,
-    imageUrl: 'https://picsum.photos/seed/ay15/400/300',
+    imageUrl: 'https://picsum.photos/seed/ayur15/400/300',
     imageHint: 'amla juice bottle',
   },
 ];
+
+
+    

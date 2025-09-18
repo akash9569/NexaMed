@@ -1,18 +1,16 @@
 
+
 import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
 } from '@/components/ui/card';
 import { SearchForm } from '@/components/search-form';
 import { conditions, medications } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { formatCurrency } from '@/lib/utils';
-import { MapPin, Upload, Stethoscope, ShieldCheck, Microscope, ChevronRight, ChevronLeft } from 'lucide-react';
+import { MapPin, Upload, Stethoscope, ShieldCheck, Microscope, ChevronRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Badge } from '@/components/ui/badge';
 
@@ -23,7 +21,7 @@ const featureCards = [
         description: "FIND STORE",
         icon: MapPin,
         href: "/pharmacy-locator",
-        image: "https://picsum.photos/seed/401/200/150",
+        image: "https://picsum.photos/seed/feat1/200/150",
         imageHint: "map marker",
     },
     {
@@ -31,7 +29,7 @@ const featureCards = [
         description: "Upload Now",
         icon: Upload,
         href: "/#",
-        image: "https://picsum.photos/seed/402/200/150",
+        image: "https://picsum.photos/seed/feat2/200/150",
         imageHint: "prescription upload",
     },
     {
@@ -39,7 +37,7 @@ const featureCards = [
         description: "Book Now",
         icon: Stethoscope,
         href: "/find-doctors",
-        image: "https://picsum.photos/seed/403/200/150",
+        image: "https://picsum.photos/seed/feat3/200/150",
         imageHint: "doctor consultation",
     },
     {
@@ -47,7 +45,7 @@ const featureCards = [
         description: "Explore Plans",
         icon: ShieldCheck,
         href: "/#",
-        image: "https://picsum.photos/seed/404/200/150",
+        image: "https://picsum.photos/seed/feat4/200/150",
         imageHint: "insurance document",
     },
     {
@@ -55,7 +53,7 @@ const featureCards = [
         description: "AT HOME",
         icon: Microscope,
         href: "/health-checkups",
-        image: "https://picsum.photos/seed/405/200/150",
+        image: "https://picsum.photos/seed/feat5/200/150",
         imageHint: "lab test",
     },
 ];
@@ -110,8 +108,8 @@ const ProductCarousel = ({ title, products, viewAllHref }: { title: string, prod
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
-                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
+                <CarouselPrevious className="absolute left-[-1.5rem] top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
+                <CarouselNext className="absolute right-[-1.5rem] top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
             </Carousel>
         </div>
     </section>
@@ -148,8 +146,8 @@ const BrandsCarousel = ({ title, brands, viewAllHref }: { title: string, brands:
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
-                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
+                 <CarouselPrevious className="absolute left-[-1.5rem] top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
+                <CarouselNext className="absolute right-[-1.5rem] top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
             </Carousel>
         </div>
     </section>
@@ -190,8 +188,8 @@ const CategoryCarousel = ({ title, categories, viewAllHref }: { title: string, c
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
-                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
+                <CarouselPrevious className="absolute left-[-1.5rem] top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
+                <CarouselNext className="absolute right-[-1.5rem] top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-foreground shadow-md rounded-full h-8 w-8" />
             </Carousel>
         </div>
     </section>
@@ -201,29 +199,29 @@ export default function Home() {
     const valueDeals = medications.slice(0, 5).map((med, i) => ({ ...med, mrp: med.price * 1.6, discount: 38, tag: i === 1 ? 'Bestseller' : 'Buy 1 Get 1', showAddToCart: true }));
     const fiftyOffDeals = medications.slice(1, 6).map((med, i) => ({ ...med, mrp: med.price * 2, discount: 50, tag: i === 1 ? 'Bestseller' : 'Buy 2, +2% OFF', showAddToCart: true }));
     const healthCheckups = [
-        { id: 'gold-checkup', name: 'Comprehensive Gold Full Body Checkup', price: 2249, mrp: 4498, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/601/200/200', imageHint: 'health checkup', showAddToCart: false, href: '/health-checkups' },
-        { id: 'silver-checkup', name: 'Good Health Silver Package', price: 699, mrp: 1398, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/602/200/200', imageHint: 'health package', showAddToCart: false, href: '/health-checkups' },
-        { id: 'silver-full-checkup', name: 'Comprehensive Silver Full Body Checkup', price: 1899, mrp: 3798, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/603/200/200', imageHint: 'medical checkup', showAddToCart: false, href: '/health-checkups' },
-        { id: 'platinum-checkup', name: 'Comprehensive Platinum Full Body Checkup', price: 3599, mrp: 7198, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/604/200/200', imageHint: 'premium health check', showAddToCart: false, href: '/health-checkups' },
-        { id: 'good-health-checkup', name: 'Good Health Platinum Package', price: 1499, mrp: 2998, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/605/200/200', imageHint: 'wellness package', showAddToCart: false, href: '/health-checkups' },
+        { id: 'gold-checkup', name: 'Comprehensive Gold Full Body Checkup', price: 2249, mrp: 4498, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/health1/200/200', imageHint: 'health checkup kit', showAddToCart: false, href: '/health-checkups' },
+        { id: 'silver-checkup', name: 'Good Health Silver Package', price: 699, mrp: 1398, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/health2/200/200', imageHint: 'health package', showAddToCart: false, href: '/health-checkups' },
+        { id: 'silver-full-checkup', name: 'Comprehensive Silver Full Body Checkup', price: 1899, mrp: 3798, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/health3/200/200', imageHint: 'medical checkup', showAddToCart: false, href: '/health-checkups' },
+        { id: 'platinum-checkup', name: 'Comprehensive Platinum Full Body Checkup', price: 3599, mrp: 7198, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/health4/200/200', imageHint: 'premium health check', showAddToCart: false, href: '/health-checkups' },
+        { id: 'good-health-checkup', name: 'Good Health Platinum Package', price: 1499, mrp: 2998, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/health5/200/200', imageHint: 'wellness package', showAddToCart: false, href: '/health-checkups' },
     ];
     const featuredBrands = [
-        { name: 'Optimum Nutrition', logoUrl: 'https://picsum.photos/seed/701/100/100', imageHint: 'ON logo' },
-        { name: 'Nicotex', logoUrl: 'https://picsum.photos/seed/702/100/100', imageHint: 'Nicotex logo' },
-        { name: 'HealthKart', logoUrl: 'https://picsum.photos/seed/703/100/100', imageHint: 'HealthKart logo' },
-        { name: 'Saffola', logoUrl: 'https://picsum.photos/seed/704/100/100', imageHint: 'Saffola logo' },
-        { name: 'Cetaphil', logoUrl: 'https://picsum.photos/seed/705/100/100', imageHint: 'Cetaphil logo' },
-        { name: 'Miduty', logoUrl: 'https://picsum.photos/seed/706/100/100', imageHint: 'Miduty logo' },
-        { name: 'Pilgrim', logoUrl: 'https://picsum.photos/seed/707/100/100', imageHint: 'Pilgrim logo' },
+        { name: 'Optimum Nutrition', logoUrl: 'https://picsum.photos/seed/brandlogo1/100/100', imageHint: 'ON logo' },
+        { name: 'Nicotex', logoUrl: 'https://picsum.photos/seed/brandlogo2/100/100', imageHint: 'Nicotex logo' },
+        { name: 'HealthKart', logoUrl: 'https://picsum.photos/seed/brandlogo3/100/100', imageHint: 'HealthKart logo' },
+        { name: 'Saffola', logoUrl: 'https://picsum.photos/seed/brandlogo4/100/100', imageHint: 'Saffola logo' },
+        { name: 'Cetaphil', logoUrl: 'https://picsum.photos/seed/brandlogo5/100/100', imageHint: 'Cetaphil logo' },
+        { name: 'Miduty', logoUrl: 'https://picsum.photos/seed/brandlogo6/100/100', imageHint: 'Miduty logo' },
+        { name: 'Pilgrim', logoUrl: 'https://picsum.photos/seed/brandlogo7/100/100', imageHint: 'Pilgrim logo' },
     ];
     const personalCareCategories = [
-        { name: 'Skin Care', imageUrl: 'https://picsum.photos/seed/801/120/120', imageHint: 'skin care products', bgColor: 'bg-green-100', href: "/personal-care" },
-        { name: 'Hair Care', imageUrl: 'https://picsum.photos/seed/802/120/120', imageHint: 'hair care products', bgColor: 'bg-blue-100', href: "/personal-care" },
-        { name: 'Sexual Wellness', imageUrl: 'https://picsum.photos/seed/803/120/120', imageHint: 'sexual wellness products', bgColor: 'bg-orange-100', href: "/women-care" },
-        { name: 'Oral Care', imageUrl: 'https://picsum.photos/seed/804/120/120', imageHint: 'oral care products', bgColor: 'bg-red-100', href: "/personal-care" },
-        { name: 'Elderly Care', imageUrl: 'https://picsum.photos/seed/805/120/120', imageHint: 'elderly care products', bgColor: 'bg-yellow-100', href: "/health-devices" },
-        { name: 'Baby Care', imageUrl: 'https://picsum.photos/seed/806/120/120', imageHint: 'baby care products', bgColor: 'bg-purple-100', href: "/baby-care" },
-        { name: 'Women Care', imageUrl: 'https://picsum.photos/seed/807/120/120', imageHint: 'women care products', bgColor: 'bg-pink-100', href: "/women-care" },
+        { name: 'Skin Care', imageUrl: 'https://picsum.photos/seed/pcat1/120/120', imageHint: 'skin care products', bgColor: 'bg-green-100', href: "/personal-care" },
+        { name: 'Hair Care', imageUrl: 'https://picsum.photos/seed/pcat2/120/120', imageHint: 'hair care products', bgColor: 'bg-blue-100', href: "/personal-care" },
+        { name: 'Sexual Wellness', imageUrl: 'https://picsum.photos/seed/pcat3/120/120', imageHint: 'sexual wellness products', bgColor: 'bg-orange-100', href: "/women-care" },
+        { name: 'Oral Care', imageUrl: 'https://picsum.photos/seed/pcat4/120/120', imageHint: 'oral care products', bgColor: 'bg-red-100', href: "/personal-care" },
+        { name: 'Elderly Care', imageUrl: 'https://picsum.photos/seed/pcat5/120/120', imageHint: 'elderly care products', bgColor: 'bg-yellow-100', href: "/health-devices" },
+        { name: 'Baby Care', imageUrl: 'https://picsum.photos/seed/pcat6/120/120', imageHint: 'baby care products', bgColor: 'bg-purple-100', href: "/baby-care" },
+        { name: 'Women Care', imageUrl: 'https://picsum.photos/seed/pcat7/120/120', imageHint: 'women care products', bgColor: 'bg-pink-100', href: "/women-care" },
     ];
 
 
@@ -231,12 +229,12 @@ export default function Home() {
     <div className="flex flex-col">
        <section className="relative w-full pt-12 pb-16 md:pt-16 md:pb-20 bg-card">
         <Image
-          src="https://picsum.photos/seed/100/1600/400"
+          src="https://picsum.photos/seed/hero-bg/1600/400"
           alt="Abstract background of pills and bottles"
           fill
           objectFit="cover"
           className="opacity-10 dark:opacity-20 z-0"
-          data-ai-hint="pills bottles"
+          data-ai-hint="medical background"
         />
          <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
             <div className="max-w-3xl mx-auto">
@@ -309,5 +307,7 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
