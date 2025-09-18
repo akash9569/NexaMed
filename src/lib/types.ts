@@ -34,3 +34,11 @@ export type Pharmacy = {
   address: string;
   distance: string;
 };
+
+export type CartItem = {
+  id: string;
+  name: string;
+  price: number;
+  quantity: number;
+  imageUrl: string;
+};

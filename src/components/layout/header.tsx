@@ -8,16 +8,19 @@ import { SearchForm } from '@/components/search-form';
 import { PillWiseLogo } from '../icons';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { useCart } from '@/context/cart-context';
+import { Badge } from '@/components/ui/badge';
 
 const navLinks = [
   { href: '/shop', label: 'Shop' },
   { href: '/#categories', label: 'Categories' },
-  { href: '/#about-us', label: 'About Us' },
   { href: '/pharmacy-locator', label: 'Pharmacy Locator' },
 ];
 
 export function Header() {
   const pathname = usePathname();
+  const { cart } = useCart();
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -75,8 +78,15 @@ export function Header() {
           <div className="w-full flex-1 md:w-auto md:flex-none">
             <SearchForm />
           </div>
-          <Button variant="ghost" size="icon" aria-label="Shopping Cart">
-            <ShoppingCart className="h-5 w-5" />
+          <Button variant="ghost" size="icon" aria-label="Shopping Cart" asChild>
+            <Link href="/cart">
+              <div className="relative">
+                <ShoppingCart className="h-5 w-5" />
+                {totalItems > 0 && (
+                  <Badge variant="destructive" className="absolute -top-2 -right-2 h-5 w-5 justify-center p-0">{totalItems}</Badge>
+                )}
+              </div>
+            </Link>
           </Button>
         </div>
       </div>

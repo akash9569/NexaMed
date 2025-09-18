@@ -1,3 +1,5 @@
+"use client";
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { medications } from '@/lib/data';
@@ -8,7 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ShoppingCart } from 'lucide-react';
@@ -16,20 +17,35 @@ import Link from 'next/link';
 import { formatCurrency } from '@/lib/utils';
 import ArticleSuggestions from './article-suggestions';
 import ReviewsSection from './reviews-section';
+import { useCart } from '@/context/cart-context';
+import { useToast } from '@/hooks/use-toast';
 
 export default function MedicationPage({
   params,
 }: {
   params: { slug: string };
 }) {
+  const { addToCart } = useCart();
+  const { toast } = useToast();
   const medication = medications.find((med) => med.id === params.slug);
 
   if (!medication) {
     notFound();
   }
-
-  const apolloSearchUrl = `https://www.apollopharmacy.in/search-medicines/${encodeURIComponent(medication.name)}`;
-  const oneMgSearchUrl = `https://www.1mg.com/search/all?name=${encodeURIComponent(medication.name)}`;
+  
+  const handleAddToCart = () => {
+    addToCart({
+      id: medication.id,
+      name: medication.name,
+      price: medication.price,
+      quantity: 1,
+      imageUrl: medication.imageUrl
+    });
+    toast({
+      title: "Added to cart",
+      description: `${medication.name} has been added to your cart.`,
+    });
+  };
 
   return (
     <div className="container mx-auto px-4 md:px-6 py-8 md:py-12">
@@ -56,22 +72,12 @@ export default function MedicationPage({
           </div>
           <Card>
             <CardHeader>
-              <CardTitle>Order Home Delivery</CardTitle>
-              <CardDescription>
-                Get {medication.name} delivered to your doorstep.
-              </CardDescription>
+              <CardTitle>Buy Now</CardTitle>
             </CardHeader>
-            <CardContent className="flex flex-col sm:flex-row gap-4">
-              <Button asChild className="w-full">
-                <Link href={apolloSearchUrl} target="_blank" rel="noopener noreferrer">
-                  <ShoppingCart className="mr-2 h-4 w-4" /> Order from Apollo
-                </Link>
-              </Button>
-              <Button asChild variant="secondary" className="w-full">
-                <Link href={oneMgSearchUrl} target="_blank" rel="noopener noreferrer">
-                  <ShoppingCart className="mr-2 h-4 w-4" /> Order from 1mg
-                </Link>
-              </Button>
+            <CardContent>
+               <Button onClick={handleAddToCart} className="w-full">
+                  <ShoppingCart className="mr-2 h-4 w-4" /> Add to Cart
+                </Button>
             </CardContent>
           </Card>
         </div>
