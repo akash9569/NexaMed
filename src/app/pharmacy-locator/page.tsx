@@ -9,10 +9,10 @@ import type { Pharmacy } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
 
 const mockPharmacies: Pharmacy[] = [
-    { name: "Apollo Pharmacy", address: "123 Health St, Bengaluru", distance: "0.5 km" },
-    { name: "MedPlus", address: "456 Wellness Ave, Bengaluru", distance: "1.2 km" },
-    { name: "Wellness Forever", address: "789 Cure Blvd, Bengaluru", distance: "2.1 km" },
-    { name: "Local Chemist", address: "101 Remedy Ln, Bengaluru", distance: "2.5 km" },
+    { name: "Apollo Pharmacy", address: "1 Ashok Marg, Hazratganj, Lucknow", distance: "0.8 km" },
+    { name: "MedPlus", address: "45 Vidhan Sabha Marg, Lalbagh, Lucknow", distance: "1.5 km" },
+    { name: "Wellness Forever", address: "78 Gomti Nagar Rd, Lucknow", distance: "3.2 km" },
+    { name: "Local Chemist", address: "101 Aliganj, Lucknow", distance: "4.1 km" },
 ];
 
 export default function PharmacyLocatorPage() {
@@ -103,7 +103,7 @@ export default function PharmacyLocatorPage() {
                 
                 {pharmacies.length > 0 && (
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold">Nearby Pharmacies</h2>
+                        <h2 className="text-2xl font-bold">Nearby Pharmacies in Lucknow</h2>
                         {pharmacies.map((pharmacy, index) => (
                              <Card key={index}>
                                 <CardHeader>
