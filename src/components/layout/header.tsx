@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, ShoppingCart, ChevronDown } from 'lucide-react';
+import { Menu, ShoppingCart, ChevronDown, Percent } from 'lucide-react';
 import { SearchForm } from '@/components/search-form';
 import { PillWiseLogo } from '../icons';
 import { usePathname } from 'next/navigation';
@@ -241,10 +241,13 @@ export function Header() {
             </nav>
         </div>
         
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <div className="flex flex-1 items-center justify-end space-x-2">
           <div className="w-full flex-1 md:w-auto md:flex-none">
             <SearchForm />
           </div>
+           <Button variant="ghost" size="icon" aria-label="Offers">
+             <Percent className="h-5 w-5" />
+           </Button>
           <Button variant="ghost" size="icon" aria-label="Shopping Cart" asChild>
             <Link href="/cart">
               <div className="relative">
@@ -255,6 +258,7 @@ export function Header() {
               </div>
             </Link>
           </Button>
+          <Button>Login</Button>
         </div>
       </div>
     </header>
