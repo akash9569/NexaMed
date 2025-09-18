@@ -7,7 +7,7 @@ export const medications: Medication[] = [
     name: 'Paracetamol 500mg',
     description: 'A common pain reliever and fever reducer.',
     imageUrl: 'https://picsum.photos/seed/201/400/300',
-    imageHint: 'white pills',
+    imageHint: 'Paracetamol tablets',
     uses: ['Headache', 'Muscle ache', 'Fever', 'Toothache', 'Cold'],
     sideEffects: [
       'Nausea',
@@ -44,7 +44,7 @@ export const medications: Medication[] = [
     description:
       'A nonsteroidal anti-inflammatory drug (NSAID) used for pain relief, fever reduction, and inflammation.',
     imageUrl: 'https://picsum.photos/seed/202/400/300',
-    imageHint: 'orange pills',
+    imageHint: 'Ibuprofen pills',
     uses: ['Menstrual cramps', 'Arthritis', 'Migraine', 'Sprains'],
     sideEffects: [
       'Upset stomach',
@@ -70,7 +70,7 @@ export const medications: Medication[] = [
     name: 'Cetirizine 10mg',
     description: 'An antihistamine used to relieve allergy symptoms.',
     imageUrl: 'https://picsum.photos/seed/203/400/300',
-    imageHint: 'small white pill',
+    imageHint: 'Cetirizine pill',
     uses: ['Hay fever', 'Hives', 'Runny nose', 'Itchy eyes', 'Sneezing'],
     sideEffects: ['Drowsiness', 'Dry mouth', 'Tiredness', 'Stomach pain'],
     interactions: ['Avoid alcohol and other sedatives.'],
@@ -83,7 +83,7 @@ export const medications: Medication[] = [
     description:
       'A proton pump inhibitor (PPI) that reduces stomach acid.',
     imageUrl: 'https://picsum.photos/seed/204/400/300',
-    imageHint: 'capsule pill',
+    imageHint: 'Omeprazole capsule',
     uses: ['Heartburn', 'Acid reflux (GERD)', 'Stomach ulcers'],
     sideEffects: ['Headache', 'Diarrhea or constipation', 'Gas', 'Nausea'],
     interactions: ['May affect the absorption of certain drugs.'],
@@ -103,7 +103,7 @@ export const medications: Medication[] = [
     name: 'Amoxicillin 500mg',
     description: 'A penicillin antibiotic that fights bacteria.',
     imageUrl: 'https://picsum.photos/seed/205/400/300',
-    imageHint: 'pink yellow capsule',
+    imageHint: 'Amoxicillin capsule',
     uses: ['Bacterial infections', 'Strep throat', 'Pneumonia', 'Ear infections'],
     sideEffects: ['Nausea', 'Vomiting', 'Diarrhea', 'Rash'],
     interactions: ['May decrease effectiveness of birth control pills.'],
@@ -115,7 +115,7 @@ export const medications: Medication[] = [
     name: 'Atorvastatin 10mg',
     description: 'Used to lower bad cholesterol and fats (such as LDL, triglycerides) and raise good cholesterol (HDL) in the blood.',
     imageUrl: 'https://picsum.photos/seed/206/400/300',
-    imageHint: 'white tablet',
+    imageHint: 'Atorvastatin tablet',
     uses: ['High cholesterol', 'Prevention of cardiovascular disease'],
     sideEffects: ['Muscle pain', 'Tiredness', 'Diarrhea', 'Joint pain'],
     interactions: ['Avoid grapefruit juice.', 'Many drug interactions exist.'],
@@ -127,7 +127,7 @@ export const medications: Medication[] = [
     name: 'Metformin 500mg',
     description: 'Used to treat high blood sugar levels caused by type 2 diabetes.',
     imageUrl: 'https://picsum.photos/seed/207/400/300',
-    imageHint: 'white oblong pill',
+    imageHint: 'Metformin pill',
     uses: ['Type 2 diabetes'],
     sideEffects: ['Nausea', 'Vomiting', 'Stomach upset', 'Diarrhea', 'Weakness'],
     interactions: ['Avoid alcohol.', 'Iodinated contrast materials.'],
@@ -139,7 +139,7 @@ export const medications: Medication[] = [
     name: 'Losartan 50mg',
     description: 'Used to treat high blood pressure (hypertension) and to help protect the kidneys from damage due to diabetes.',
     imageUrl: 'https://picsum.photos/seed/208/400/300',
-    imageHint: 'film coated tablet',
+    imageHint: 'Losartan coated tablet',
     uses: ['High blood pressure', 'Diabetic nephropathy'],
     sideEffects: ['Dizziness', 'Tiredness', 'Low blood pressure'],
     interactions: ['Do not use if pregnant.', 'Avoid potassium supplements.'],
@@ -151,7 +151,7 @@ export const medications: Medication[] = [
     name: 'Levothyroxine 50mcg',
     description: 'Used to treat an underactive thyroid (hypothyroidism).',
     imageUrl: 'https://picsum.photos/seed/209/400/300',
-    imageHint: 'small purple pill',
+    imageHint: 'Levothyroxine pill',
     uses: ['Hypothyroidism'],
     sideEffects: ['Hair loss (temporary)', 'Changes in menstrual periods', 'Headache', 'Nervousness'],
     interactions: ['Take on an empty stomach, 30-60 minutes before breakfast.'],
@@ -163,7 +163,7 @@ export const medications: Medication[] = [
     name: 'Amlodipine 5mg',
     description: 'A calcium channel blocker used to treat high blood pressure and chest pain (angina).',
     imageUrl: 'https://picsum.photos/seed/210/400/300',
-    imageHint: 'small white pill',
+    imageHint: 'Amlodipine tablet',
     uses: ['High blood pressure', 'Angina'],
     sideEffects: ['Swelling of legs or ankles', 'Tiredness', 'Stomach pain', 'Dizziness'],
     interactions: ['Can interact with certain heart medications.'],
@@ -175,7 +175,7 @@ export const medications: Medication[] = [
     name: 'Montelukast 10mg',
     description: 'Used to prevent wheezing, difficulty breathing, chest tightness, and coughing caused by asthma.',
     imageUrl: 'https://picsum.photos/seed/211/400/300',
-    imageHint: 'beige square pill',
+    imageHint: 'Montelukast square pill',
     uses: ['Asthma', 'Allergic rhinitis'],
     sideEffects: ['Headache', 'Stomach pain', 'Mood changes', 'Cough'],
     interactions: ['Few major drug interactions.'],
@@ -187,7 +187,7 @@ export const medications: Medication[] = [
     name: 'Gabapentin 300mg',
     description: 'An anti-epileptic drug, also used to treat nerve pain.',
     imageUrl: 'https://picsum.photos/seed/212/400/300',
-    imageHint: 'yellow capsule',
+    imageHint: 'Gabapentin capsule',
     uses: ['Seizures', 'Nerve pain from shingles', 'Restless legs syndrome'],
     sideEffects: ['Dizziness', 'Drowsiness', 'Loss of coordination', 'Tiredness'],
     interactions: ['Avoid alcohol.', 'Can increase the effect of opioids.'],
@@ -199,7 +199,7 @@ export const medications: Medication[] = [
     name: 'Sertraline 50mg',
     description: 'An SSRI antidepressant used to treat depression, obsessive-compulsive disorder (OCD), panic disorder, and anxiety disorders.',
     imageUrl: 'https://picsum.photos/seed/213/400/300',
-    imageHint: 'blue oblong pill',
+    imageHint: 'Sertraline pill',
     uses: ['Depression', 'OCD', 'Panic disorder', 'PTSD', 'Social anxiety disorder'],
     sideEffects: ['Nausea', 'Dizziness', 'Drowsiness', 'Insomnia', 'Loss of appetite'],
     interactions: ['Risk of serotonin syndrome if taken with other serotonergic drugs.'],
@@ -211,7 +211,7 @@ export const medications: Medication[] = [
     name: 'Furosemide 20mg',
     description: 'A diuretic ("water pill") used to treat fluid retention (edema) in people with congestive heart failure, liver disease, or a kidney disorder.',
     imageUrl: 'https://picsum.photos/seed/214/400/300',
-    imageHint: 'small white tablet',
+    imageHint: 'Furosemide tablet',
     uses: ['Edema', 'High blood pressure'],
     sideEffects: ['Increased urination', 'Thirst', 'Dizziness', 'Muscle cramps'],
     interactions: ['Can cause dehydration and electrolyte imbalance.'],
@@ -223,7 +223,7 @@ export const medications: Medication[] = [
     name: 'Pantoprazole 40mg',
     description: 'A proton pump inhibitor (PPI) that decreases the amount of acid produced in the stomach.',
     imageUrl: 'https://picsum.photos/seed/215/400/300',
-    imageHint: 'yellow oval pill',
+    imageHint: 'Pantoprazole oval pill',
     uses: ['GERD', 'Erosive esophagitis', 'Zollinger-Ellison syndrome'],
     sideEffects: ['Headache', 'Diarrhea', 'Nausea', 'Gas'],
     interactions: ['May reduce the absorption of drugs that need stomach acid.'],
@@ -507,6 +507,8 @@ export const doctors: Doctor[] = [
     imageHint: 'compassionate female doctor'
   }
 ];
+
+    
 
     
 
