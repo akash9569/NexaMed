@@ -52,3 +52,12 @@ export type Doctor = {
   imageUrl: string;
   imageHint: string;
 };
+
+export type BabyCareProduct = {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  imageHint: string;
+};

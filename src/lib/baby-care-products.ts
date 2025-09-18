@@ -1,0 +1,68 @@
+import type { BabyCareProduct } from './types';
+
+export const babyCareProducts: BabyCareProduct[] = [
+  {
+    id: 'pampers-diapers',
+    name: 'Pampers Active Baby Diapers',
+    description: 'Taped diapers for complete skin protection. Size M, 72 count.',
+    price: 799,
+    imageUrl: 'https://picsum.photos/seed/bc1/400/300',
+    imageHint: 'baby diapers',
+  },
+  {
+    id: 'himalaya-wipes',
+    name: 'Himalaya Gentle Baby Wipes',
+    description: 'Infused with Aloe Vera and Indian Lotus extracts. Pack of 2 (72 count each).',
+    price: 150,
+    imageUrl: 'https://picsum.photos/seed/bc2/400/300',
+    imageHint: 'baby wipes pack',
+  },
+  {
+    id: 'johnsons-lotion',
+    name: 'Johnson\'s Baby Lotion',
+    description: 'Clinically mildness proven. 24-hour moisture. 500ml bottle.',
+    price: 350,
+    imageUrl: 'https://picsum.photos/seed/bc3/400/300',
+    imageHint: 'baby lotion bottle',
+  },
+  {
+    id: 'sebamed-shampoo',
+    name: 'Sebamed Baby Shampoo',
+    description: 'Extra mild cleanser for delicate baby hair and scalp. 150ml.',
+    price: 475,
+    imageUrl: 'https://picsum.photos/seed/bc4/400/300',
+    imageHint: 'baby shampoo bottle',
+  },
+  {
+    id: 'cetaphil-baby-wash',
+    name: 'Cetaphil Baby Wash & Shampoo',
+    description: 'With organic calendula, tear-free, and hypoallergenic. 400ml.',
+    price: 650,
+    imageUrl: 'https://picsum.photos/seed/bc5/400/300',
+    imageHint: 'baby wash bottle',
+  },
+  {
+    id: 'dexolac-infant-formula',
+    name: 'Dexolac Stage 1 Infant Formula',
+    description: 'Powdered milk substitute for babies up to 6 months. 400g Bag-in-Box.',
+    price: 420,
+    imageUrl: 'https://picsum.photos/seed/bc6/400/300',
+    imageHint: 'infant formula box',
+  },
+  {
+    id: 'himalaya-baby-powder',
+    name: 'Himalaya Baby Powder',
+    description: 'Refreshes and cools the skin, preventing body odor. 400g.',
+    price: 210,
+    imageUrl: 'https://picsum.photos/seed/bc7/400/300',
+    imageHint: 'baby powder container',
+  },
+  {
+    id: 'chicco-baby-soap',
+    name: 'Chicco Baby Moments Soap',
+    description: 'Glycerine-based soap for gentle cleansing. Pack of 3.',
+    price: 225,
+    imageUrl: 'https://picsum.photos/seed/bc8/400/300',
+    imageHint: 'baby soap bars',
+  },
+];
