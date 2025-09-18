@@ -167,38 +167,40 @@ export function Header() {
               <PillWiseLogo className="h-6 w-6 text-primary" />
               <span className="font-bold font-headline">PillWise</span>
             </Link>
-            <div className="flex flex-col space-y-3">
-              {navLinks.map(({ href, label }) => (
-                <Link key={label} href={href} className="text-foreground/80 hover:text-foreground">
-                  {label}
-                </Link>
-              ))}
-              <DropdownMenuSeparator />
-              {megaMenuData.map((menu) => (
-                <div key={menu.title}>
-                  <h3 className="font-semibold px-2 py-1.5">{menu.title}</h3>
-                  {menu.categories.map((cat) => (
-                    <Link key={cat.name} href="#" className="block pl-4 text-foreground/80 hover:text-foreground">
-                      {cat.name}
-                    </Link>
-                  ))}
-                </div>
-              ))}
-            </div>
+            <ScrollArea className="h-[calc(100vh-8rem)]">
+              <div className="flex flex-col space-y-3 pr-6">
+                {navLinks.map(({ href, label }) => (
+                  <Link key={label} href={href} className="text-foreground/80 hover:text-foreground">
+                    {label}
+                  </Link>
+                ))}
+                <DropdownMenuSeparator />
+                {megaMenuData.map((menu) => (
+                  <div key={menu.title}>
+                    <h3 className="font-semibold px-2 py-1.5">{menu.title}</h3>
+                    {menu.categories.map((cat) => (
+                      <Link key={cat.name} href="#" className="block pl-4 text-sm text-foreground/80 hover:text-foreground py-1">
+                        {cat.name}
+                      </Link>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </ScrollArea>
           </SheetContent>
         </Sheet>
         
         <div className="flex flex-1 items-center justify-between gap-4 md:justify-start">
-            <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
+            <nav className="hidden md:flex items-center gap-1 text-sm font-medium">
                 {megaMenuData.map((menu) => (
                     <DropdownMenu key={menu.title}>
                         <DropdownMenuTrigger asChild>
-                            <Button variant="ghost" className="p-0 text-foreground/60 hover:text-foreground/80 focus-visible:ring-0">
+                            <Button variant="ghost" className="px-3 py-2 text-foreground/80 hover:text-foreground/100 focus-visible:ring-0">
                                 {menu.title}
                                 <ChevronDown className="ml-1 h-4 w-4" />
                             </Button>
                         </DropdownMenuTrigger>
-                        <DropdownMenuContent className="w-56" align="start">
+                        <DropdownMenuContent className="w-64" align="start">
                             <ScrollArea className="h-96">
                                 <DropdownMenuGroup>
                                     {menu.categories.map((category) =>
@@ -231,8 +233,8 @@ export function Header() {
                     key={label}
                     href={href}
                     className={cn(
-                      'transition-colors hover:text-foreground/80',
-                      pathname === href ? 'text-foreground' : 'text-foreground/60'
+                      'transition-colors hover:text-foreground/80 px-3 py-2 rounded-md',
+                      pathname === href ? 'text-foreground bg-accent' : 'text-foreground/80'
                     )}
                   >
                     {label}
@@ -253,7 +255,7 @@ export function Header() {
               <div className="relative">
                 <ShoppingCart className="h-5 w-5" />
                 {totalItems > 0 && (
-                  <Badge variant="destructive" className="absolute -top-2 -right-2 h-5 w-5 justify-center p-0">{totalItems}</Badge>
+                  <Badge variant="destructive" className="absolute -top-2 -right-2 h-5 w-5 justify-center p-0 text-xs">{totalItems}</Badge>
                 )}
               </div>
             </Link>
