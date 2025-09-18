@@ -146,9 +146,11 @@ export function Header() {
               </div>
             </Link>
           </Button>
-          <Button>
+          <Button asChild>
+            <Link href="/login">
               <UserCircle className="mr-2 h-5 w-5"/>
               Login
+            </Link>
           </Button>
         </div>
       </div>
