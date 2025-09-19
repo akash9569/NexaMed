@@ -4,19 +4,20 @@ import { Heart, Users, CheckCircle, Shield } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'Dr. Akash Singh',
-    title: 'Founder & CEO',
-    imageUrl: 'https://drive.google.com/uc?export=download&id=1n-Rn-wyi1nbrLnqMrKFVXEvhJ6Fxs8KK',
-    imageHint: 'male founder photo',
-    description: 'With over 20 years of experience in the medical field, Dr. Singh founded NexaMed to make healthcare accessible to all.',
-  },
-  {
-    name: 'Shubhashish Singh',
-    title: 'Chief Technology Officer',
-    imageUrl: 'https://instagram.flko10-2.fna.fbcdn.net/v/t51.2885-15/514298171_18080025979883069_7922431422593200564_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjEwODB4MTA4MC5zZHIuZjc1NzYxLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=instagram.flko10-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2QFcNZmRb0aMxtWCLwZ58a29T7mWolfsXraA3rY47gBAEet5AW4vJ_ehejB8lY5wU9r6Gegv8AYJY7VGoexkUSYX&_nc_ohc=9EtC_fpGqesQ7kNvwEC6MKF&_nc_gid=z2-rBH5bxtmACDnkCO8TPQ&edm=AP4sbd4BAAAA&ccb=7-5&ig_cache_key=MzY2NjQyNTkxMjQ4OTY5ODYyMQ%3D%3D.3-ccb7-5&oh=00_AfbAknHYaDanQZ1V78QqNfGu1wYIERYUUCH3PLzcL-bBwg&oe=68D2B076&_nc_sid=7a9f4b',
+    name: 'Drx. Shubhashish Singh',
+    title: 'Co Founder & CEO',
+    imageUrl: 'https://drive.google.com/uc?export=download&id=1m-GFuqVe3BP84p0ppF0yw15MFdqY0aiN',
     imageHint: 'male technology officer',
     description: 'Vikram leads our technology team, ensuring a seamless and secure digital experience for our users.',
   },
+  {
+    name: 'Dr. Akash Singh',
+    title: 'Chief Technology Officer',
+    imageUrl: 'https://drive.google.com/uc?export=download&id=1EIVBCPOvQthzqD5ceR3IGVX4c85Uiu7u',
+    imageHint: 'male founder photo',
+    description: 'With over 20 years of experience in the medical field, Dr. Singh founded NexaMed to make healthcare accessible to all.',
+  },
+  
   {
     name: 'Priya Desai',
     title: 'Head of Pharmacy',
