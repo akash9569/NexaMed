@@ -8,10 +8,10 @@ const teamMembers = [
     title: 'Co Founder & CEO',
     imageUrl: 'https://drive.google.com/uc?export=download&id=1m-GFuqVe3BP84p0ppF0yw15MFdqY0aiN',
     imageHint: 'male technology officer',
-    description: 'With over 2 years of experience in the medical field, Dr. Singh founded NexaMed to make healthcare accessible to all.',
+    description: 'With over 2 years of experience in the medical field, Drx. Shubhashish Singh founded NexaMed to make healthcare accessible to all.',
   },
   {
-    name: 'Dr. Akash Singh',
+    name: 'Er. Akash Singh',
     title: 'Chief Technology Officer',
     imageUrl: 'https://drive.google.com/uc?export=download&id=1EIVBCPOvQthzqD5ceR3IGVX4c85Uiu7u',
     imageHint: 'male founder photo',
@@ -26,11 +26,11 @@ const teamMembers = [
     description: 'A licensed pharmacist, Priya oversees all our pharmacy operations, ensuring quality and authenticity.',
   },
    {
-    name: 'Rohan Gupta',
+    name: 'Drx. Shivanand Yadav',
     title: 'Head of Operations',
-    imageUrl: 'https://picsum.photos/seed/team4/300/300',
+    imageUrl: 'https://drive.google.com/uc?export=download&id=1V8hjJ95QyvdnvryhGGMUM1VYyVkMmIuA',
     imageHint: 'male operations head',
-    description: 'Rohan ensures that our logistics and customer service run smoothly, delivering care to your doorstep efficiently.',
+    description: 'Shivanand ensures that our logistics and customer service run smoothly, delivering care to your doorstep efficiently.',
   },
 ];
 
