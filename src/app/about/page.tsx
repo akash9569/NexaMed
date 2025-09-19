@@ -4,23 +4,23 @@ import { Heart, Users, CheckCircle, Shield } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'Dr. Anjali Sharma',
+    name: 'Dr. Akash Singh',
     title: 'Founder & CEO',
-    imageUrl: 'https://picsum.photos/seed/team1/300/300',
-    imageHint: 'female founder photo',
-    description: 'With over 20 years of experience in the medical field, Dr. Sharma founded NexaMed to make healthcare accessible to all.',
+    imageUrl: 'https://drive.google.com/uc?export=download&id=1n-Rn-wyi1nbrLnqMrKFVXEvhJ6Fxs8KK',
+    imageHint: 'male founder photo',
+    description: 'With over 20 years of experience in the medical field, Dr. Singh founded NexaMed to make healthcare accessible to all.',
   },
   {
-    name: 'Vikram Singh',
+    name: 'Shubhashish Singh',
     title: 'Chief Technology Officer',
-    imageUrl: 'https://picsum.photos/seed/team2/300/300',
+    imageUrl: 'https://instagram.flko10-2.fna.fbcdn.net/v/t51.2885-15/514298171_18080025979883069_7922431422593200564_n.webp?efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjEwODB4MTA4MC5zZHIuZjc1NzYxLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=instagram.flko10-2.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2QFcNZmRb0aMxtWCLwZ58a29T7mWolfsXraA3rY47gBAEet5AW4vJ_ehejB8lY5wU9r6Gegv8AYJY7VGoexkUSYX&_nc_ohc=9EtC_fpGqesQ7kNvwEC6MKF&_nc_gid=z2-rBH5bxtmACDnkCO8TPQ&edm=AP4sbd4BAAAA&ccb=7-5&ig_cache_key=MzY2NjQyNTkxMjQ4OTY5ODYyMQ%3D%3D.3-ccb7-5&oh=00_AfbAknHYaDanQZ1V78QqNfGu1wYIERYUUCH3PLzcL-bBwg&oe=68D2B076&_nc_sid=7a9f4b',
     imageHint: 'male technology officer',
     description: 'Vikram leads our technology team, ensuring a seamless and secure digital experience for our users.',
   },
   {
     name: 'Priya Desai',
     title: 'Head of Pharmacy',
-    imageUrl: 'https://picsum.photos/seed/team3/300/300',
+    imageUrl: 'https://img.freepik.com/premium-vector/modern-interior-pharmacy-male-pharmacist_169241-3431.jpg',
     imageHint: 'female pharmacist',
     description: 'A licensed pharmacist, Priya oversees all our pharmacy operations, ensuring quality and authenticity.',
   },
@@ -76,7 +76,7 @@ export default function AboutPage() {
                 </p>
             </div>
              <Image
-                src="https://picsum.photos/seed/mission/600/400"
+                src="https://www.n2growth.com/wp-content/uploads/2010/12/AdobeStock_143303680-scaled.jpeg"
                 alt="Our Mission"
                 width={600}
                 height={400}

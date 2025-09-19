@@ -6,7 +6,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Pampers Active Baby Diapers',
     description: 'Taped diapers for complete skin protection. Size M, 72 count.',
     price: 799,
-    imageUrl: 'https://picsum.photos/seed/bc1/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71Fqle61nAL._UF1000,1000_QL80_.jpg',
     imageHint: 'baby diapers',
   },
   {
@@ -14,7 +14,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Himalaya Gentle Baby Wipes',
     description: 'Infused with Aloe Vera and Indian Lotus extracts. Pack of 2 (72 count each).',
     price: 150,
-    imageUrl: 'https://picsum.photos/seed/bc2/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61efkHSMrFL._UF1000,1000_QL80_.jpg',
     imageHint: 'baby wipes pack',
   },
   {
@@ -22,7 +22,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Johnson\'s Baby Lotion',
     description: 'Clinically mildness proven. 24-hour moisture. 500ml bottle.',
     price: 350,
-    imageUrl: 'https://picsum.photos/seed/bc3/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51ffcjn8NlL.jpg',
     imageHint: 'baby lotion bottle',
   },
   {
@@ -30,7 +30,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Sebamed Baby Shampoo',
     description: 'Extra mild cleanser for delicate baby hair and scalp. 150ml.',
     price: 475,
-    imageUrl: 'https://picsum.photos/seed/bc4/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/412UKfGjeOL._UF1000,1000_QL80_.jpg',
     imageHint: 'baby shampoo bottle',
   },
   {
@@ -38,7 +38,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Cetaphil Baby Wash & Shampoo',
     description: 'With organic calendula, tear-free, and hypoallergenic. 400ml.',
     price: 650,
-    imageUrl: 'https://picsum.photos/seed/bc5/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61CiMkeJ9lL._UF1000,1000_QL80_.jpg',
     imageHint: 'baby wash bottle',
   },
   {
@@ -46,7 +46,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Dexolac Stage 1 Infant Formula',
     description: 'Powdered milk substitute for babies up to 6 months. 400g Bag-in-Box.',
     price: 420,
-    imageUrl: 'https://picsum.photos/seed/bc6/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71fEtlVkElL.jpg',
     imageHint: 'infant formula box',
   },
   {
@@ -54,7 +54,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Himalaya Baby Powder',
     description: 'Refreshes and cools the skin, preventing body odor. 400g.',
     price: 210,
-    imageUrl: 'https://picsum.photos/seed/bc7/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71sIfzGdDnL._UF1000,1000_QL80_.jpg',
     imageHint: 'baby powder container',
   },
   {
@@ -62,7 +62,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Chicco Baby Moments Soap',
     description: 'Glycerine-based soap for gentle cleansing. Pack of 3.',
     price: 225,
-    imageUrl: 'https://picsum.photos/seed/bc8/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61tz-FdDlHL._UF894,1000_QL80_.jpg',
     imageHint: 'baby soap bars',
   },
   {
@@ -70,7 +70,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Himalaya Diaper Rash Cream',
     description: 'Soothes red & irritated skin, and forms a protective layer on baby\'s skin. 50g.',
     price: 95,
-    imageUrl: 'https://picsum.photos/seed/bc9/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/714r1xR3jML.jpg',
     imageHint: 'diaper rash cream',
   },
   {
@@ -78,7 +78,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Johnson\'s Baby Oil',
     description: 'Enriched with Vitamin E, non-sticky and fast absorbing. 500ml.',
     price: 330,
-    imageUrl: 'https://picsum.photos/seed/bc10/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51z+GN0DzBL._UF1000,1000_QL80_.jpg',
     imageHint: 'baby oil bottle',
   },
   {
@@ -86,7 +86,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Mee Mee Anti-Bacterial Baby Liquid Cleanser',
     description: 'For cleaning baby bottles, nipples, and accessories. 500ml.',
     price: 249,
-    imageUrl: 'https://picsum.photos/seed/bc11/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51xwJxTprlL._UF1000,1000_QL80_.jpg',
     imageHint: 'bottle cleaner liquid',
   },
   {
@@ -94,7 +94,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Pigeon Peristaltic Nursing Bottle',
     description: 'Encourages baby\'s natural tongue movement. 240ml.',
     price: 299,
-    imageUrl: 'https://picsum.photos/seed/bc12/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71GMG6KBfAL.jpg',
     imageHint: 'baby feeding bottle',
   },
   {
@@ -102,7 +102,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Mothercare Baby Nail Clippers',
     description: 'Safely trim your baby\'s nails with rounded edges for safety.',
     price: 199,
-    imageUrl: 'https://picsum.photos/seed/bc13/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61MSMHxe7ML._UF894,1000_QL80_.jpg',
     imageHint: 'baby nail clippers',
   },
   {
@@ -110,7 +110,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Nestle Cerelac Wheat Apple Cereal',
     description: 'Rich in iron for babies from 6 months onwards. 300g.',
     price: 255,
-    imageUrl: 'https://picsum.photos/seed/bc14/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/815w+7rBwEL._UF1000,1000_QL80_.jpg',
     imageHint: 'baby cereal box',
   },
   {
@@ -118,7 +118,7 @@ export const babyCareProducts: BabyCareProduct[] = [
     name: 'Huggies Wonder Pants Diapers',
     description: 'Pant style diapers for long-lasting dryness and comfort. Size L, 54 count.',
     price: 899,
-    imageUrl: 'https://picsum.photos/seed/bc15/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71RCBkz5QsL.jpg',
     imageHint: 'diaper pants pack',
   },
 ];

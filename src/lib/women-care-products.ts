@@ -7,7 +7,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Whisper Ultra Clean XL+ Wings',
     description: 'Sanitary pads with 50% longer length for extra protection. 30 pads.',
     price: 320,
-    imageUrl: 'https://picsum.photos/seed/wc1/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71ei9vpJA9L.jpg',
     imageHint: 'sanitary pads pack',
   },
   {
@@ -15,7 +15,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Stayfree Secure XL Cottony Soft',
     description: 'Cottony-soft pads with wings for comfortable, secure fit. 40 pads.',
     price: 250,
-    imageUrl: 'https://picsum.photos/seed/wc2/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61z4Z-7gjyL._UF1000,1000_QL80_.jpg',
     imageHint: 'sanitary napkin packet',
   },
   {
@@ -23,7 +23,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Vwash Plus Intimate Hygiene Wash',
     description: 'Expertly formulated to maintain pH balance and prevent irritation. 200ml.',
     price: 360,
-    imageUrl: 'https://picsum.photos/seed/wc3/400/300',
+    imageUrl: 'https://rukminim2.flixcart.com/image/704/844/xif0q/women-intimate-care/4/g/u/200-0-plus-expert-intimate-hygiene-wash-for-women-with-ph-3-5-original-imahch8xztaruc7w.jpeg?q=90&crop=false',
     imageHint: 'intimate wash bottle',
   },
   {
@@ -31,7 +31,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Durex Air Condoms',
     description: 'Ultra-thin condoms for a more natural feeling. Pack of 10.',
     price: 150,
-    imageUrl: 'https://picsum.photos/seed/wc16/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61j6dW3rnUL.jpg',
     imageHint: 'condom pack durex',
   },
   {
@@ -39,7 +39,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Sirona Panty Liners',
     description: 'For daily discharge, spotting, and urinary incontinence. 40 liners.',
     price: 199,
-    imageUrl: 'https://picsum.photos/seed/wc5/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61I103uXuqL._UF1000,1000_QL80_.jpg',
     imageHint: 'panty liners box',
   },
   {
@@ -47,7 +47,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'i-pill Emergency Contraceptive Pill',
     description: 'For emergency contraception within 72 hours. 1 tablet.',
     price: 110,
-    imageUrl: 'https://picsum.photos/seed/wc6/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61VBxjXXvSL.jpg',
     imageHint: 'emergency pill pack',
   },
   {
@@ -55,7 +55,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Prega News Pregnancy Test Kit',
     description: 'Quick and accurate results in 5 minutes. Pack of 1.',
     price: 55,
-    imageUrl: 'https://picsum.photos/seed/wc7/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61wsBcZEHBL.jpg',
     imageHint: 'pregnancy test kit',
   },
    {
@@ -63,7 +63,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Durex Play Lubricant',
     description: 'Light and smooth water-based lubricant for a more pleasurable experience. 50ml.',
     price: 350,
-    imageUrl: 'https://picsum.photos/seed/wc17/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/41H4MfhcO1L._UF1000,1000_QL80_.jpg',
     imageHint: 'lubricant bottle',
   },
   {
@@ -71,7 +71,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Himalaya Evecare Syrup',
     description: 'Ayurvedic syrup for regulating menstrual cycle and relieving symptoms of PMS. 200ml.',
     price: 120,
-    imageUrl: 'https://picsum.photos/seed/wc9/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51kExB6h+7L._UF1000,1000_QL80_.jpg',
     imageHint: 'womens health syrup',
   },
   {
@@ -79,7 +79,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Sirona Reusable Menstrual Cup',
     description: 'Medium size, made with medical-grade silicone. Rash-free, leak-proof. ',
     price: 399,
-    imageUrl: 'https://picsum.photos/seed/wc10/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/81mG74z9IaL.jpg',
     imageHint: 'menstrual cup',
   },
   {
@@ -87,7 +87,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Folic Acid Tablets (5mg)',
     description: 'Essential for women of childbearing age to prevent neural tube defects. 30 tablets.',
     price: 45,
-    imageUrl: 'https://picsum.photos/seed/wc11/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/41sz-mA-OeL._UF1000,1000_QL80_.jpg',
     imageHint: 'folic acid pills',
   },
     {
@@ -95,7 +95,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Manforce Litchi Flavoured Condoms',
     description: 'For extra pleasure and protection. Pack of 10.',
     price: 80,
-    imageUrl: 'https://picsum.photos/seed/wc18/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71pjMpiqK4L.jpg',
     imageHint: 'flavored condom pack',
   },
   {
@@ -103,7 +103,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Calcium & Vitamin D3 Tablets',
     description: 'For strong bones and to prevent osteoporosis. 60 tablets.',
     price: 250,
-    imageUrl: 'https://picsum.photos/seed/wc13/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/518AnsAhlOL.jpg',
     imageHint: 'calcium supplement bottle',
   },
   {
@@ -111,7 +111,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Iron & Folic Acid Syrup',
     description: 'To treat and prevent iron-deficiency anemia. 200ml.',
     price: 150,
-    imageUrl: 'https://picsum.photos/seed/wc14/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71EzwBKYf5L._UF1000,1000_QL80_.jpg',
     imageHint: 'iron syrup bottle',
   },
   {
@@ -119,7 +119,7 @@ export const womenCareProducts: WomenCareProduct[] = [
     name: 'Cranberry Extract Capsules',
     description: 'Supports urinary tract health and helps prevent UTIs. 60 capsules.',
     price: 600,
-    imageUrl: 'https://picsum.photos/seed/wc15/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71citMPFRRL._UF1000,1000_QL80_.jpg',
     imageHint: 'cranberry supplement',
   },
 ];

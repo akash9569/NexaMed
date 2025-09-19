@@ -7,7 +7,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Nivea Body Lotion for Dry Skin',
     description: 'Nourishing Body Milk with Almond Oil. 400ml.',
     price: 350,
-    imageUrl: 'https://picsum.photos/seed/pc1/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51VCw4lYmBL._UF1000,1000_QL80_.jpg',
     imageHint: 'lotion bottle',
   },
   {
@@ -15,7 +15,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Dove Intense Repair Shampoo',
     description: 'For damaged hair, with Keratin Actives. 650ml.',
     price: 450,
-    imageUrl: 'https://picsum.photos/seed/pc2/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/41mYNA3tXNL.jpg',
     imageHint: 'shampoo bottle',
   },
   {
@@ -23,7 +23,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Pears Pure & Gentle Soap',
     description: 'With glycerin and natural oils. Pack of 8.',
     price: 320,
-    imageUrl: 'https://picsum.photos/seed/pc3/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/613wl9rnjoL._UF1000,1000_QL80_.jpg',
     imageHint: 'soap bars',
   },
   {
@@ -31,7 +31,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Colgate Total Advanced Toothpaste',
     description: 'Advanced oral care for whole mouth health. 240g combo pack.',
     price: 220,
-    imageUrl: 'https://picsum.photos/seed/pc4/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71fAc3++hsL.jpg',
     imageHint: 'toothpaste box',
   },
   {
@@ -39,7 +39,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Gillette Mach3 Manual Shaving Razor',
     description: 'Closer shave, without all the redness. Handle + 2 cartridges.',
     price: 270,
-    imageUrl: 'https://picsum.photos/seed/pc5/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61o8Ikd2qrL._UF1000,1000_QL80_.jpg',
     imageHint: 'shaving razor pack',
   },
   {
@@ -47,7 +47,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Listerine Cool Mint Mouthwash',
     description: 'Fights germs that cause bad breath, plaque & gingivitis. 500ml.',
     price: 210,
-    imageUrl: 'https://picsum.photos/seed/pc6/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71njvndq+PL.jpg',
     imageHint: 'mouthwash bottle',
   },
   {
@@ -55,7 +55,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Neutrogena Ultra Sheer Sunscreen',
     description: 'Broad Spectrum SPF 50+, non-greasy and water resistant. 88ml.',
     price: 550,
-    imageUrl: 'https://picsum.photos/seed/pc7/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/41XT6-ALAjL._UF1000,1000_QL80_.jpg',
     imageHint: 'sunscreen tube',
   },
   {
@@ -63,7 +63,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Vaseline Original Petroleum Jelly',
     description: 'Protects and locks in moisture to help dry skin heal. 42g.',
     price: 65,
-    imageUrl: 'https://picsum.photos/seed/pc8/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51fp48N3DnL._UF1000,1000_QL80_.jpg',
     imageHint: 'petroleum jelly jar',
   },
   {
@@ -71,7 +71,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Head & Shoulders Anti-Dandruff Shampoo',
     description: 'Cool Menthol, up to 100% dandruff free. 650ml.',
     price: 480,
-    imageUrl: 'https://picsum.photos/seed/pc9/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51TmpsUa8pL._UF1000,1000_QL80_.jpg',
     imageHint: 'anti dandruff shampoo',
   },
   {
@@ -79,7 +79,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Parachute 100% Pure Coconut Oil',
     description: 'Nourishes hair from within. 600ml bottle.',
     price: 250,
-    imageUrl: 'https://picsum.photos/seed/pc10/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61fapIFwFmL.jpg',
     imageHint: 'coconut oil bottle',
   },
   {
@@ -87,7 +87,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Lux Velvet Glow Soap Bar',
     description: 'With Jasmine & Vitamin E for glowing skin. Pack of 8.',
     price: 280,
-    imageUrl: 'https://picsum.photos/seed/pc11/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61+wJ-UbX2L._UF1000,1000_QL80_.jpg',
     imageHint: 'beauty soap bars',
   },
   {
@@ -95,7 +95,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Nivea Men Fresh Active Deodorant',
     description: '48h fresh feeling with ocean extracts. 150ml.',
     price: 199,
-    imageUrl: 'https://picsum.photos/seed/pc12/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51QTmyFj5wL.jpg',
     imageHint: 'deodorant spray can',
   },
   {
@@ -103,7 +103,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Pond\'s Pure Detox Face Wash',
     description: 'With activated charcoal for pollution-free glow. 200g.',
     price: 240,
-    imageUrl: 'https://picsum.photos/seed/pc13/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51LNBCOt4JL.jpg',
     imageHint: 'face wash tube',
   },
   {
@@ -111,7 +111,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Biotique Bio Neem Purifying Face Wash',
     description: 'Prevents pimples, purifies skin. 150ml.',
     price: 135,
-    imageUrl: 'https://picsum.photos/seed/pc14/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/5f7da94c-1481-445a-af28-8b4691d150ab.__CR0,0,970,600_PT0_SX970_V1___.jpg',
     imageHint: 'herbal face wash',
   },
   {
@@ -119,7 +119,7 @@ export const personalCareProducts: PersonalCareProduct[] = [
     name: 'Set Wet Hair Gel for Men',
     description: 'Vertical Hold, for a spiked up look. 100ml.',
     price: 90,
-    imageUrl: 'https://picsum.photos/seed/pc15/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61+zohZX6BL._UF1000,1000_QL80_.jpg',
     imageHint: 'hair gel tube',
   },
 ];

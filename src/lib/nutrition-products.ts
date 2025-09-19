@@ -6,7 +6,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Ensure Plus Nutrition Shake',
     description: 'Complete, balanced nutrition to help gain or maintain a healthy weight. Vanilla flavor, 1kg.',
     price: 1100,
-    imageUrl: 'https://picsum.photos/seed/np1/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61XyKXa7xHL._UF1000,1000_QL80_.jpg',
     imageHint: 'nutrition powder tin',
   },
   {
@@ -14,7 +14,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Horlicks Classic Malt',
     description: 'Health drink that has nutrients to support immunity. 500g jar.',
     price: 250,
-    imageUrl: 'https://picsum.photos/seed/np2/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51VlwTldHAL._UF1000,1000_QL80_.jpg',
     imageHint: 'malt drink jar',
   },
   {
@@ -22,7 +22,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Protinex Original Nutrition Drink',
     description: 'A vegetarian, ready-to-serve beverage mix that helps in bridging the protein gap in the diet. 400g.',
     price: 550,
-    imageUrl: 'https://picsum.photos/seed/np3/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71ZKtcc-0oL.jpg',
     imageHint: 'protein powder container',
   },
   {
@@ -30,7 +30,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'PediaSure Vanilla Delight',
     description: 'Complete & balanced nutrition supplement for children of the age group (2 years and above). 400g.',
     price: 600,
-    imageUrl: 'https://picsum.photos/seed/np4/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/81zj7DsNeYL._UF1000,1000_QL80_.jpg',
     imageHint: 'kids nutrition powder',
   },
   {
@@ -38,7 +38,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Revital H Multivitamin Capsules',
     description: 'A balanced combination of 10 vitamins, 9 minerals and ginseng for your daily energy needs. 60 capsules.',
     price: 450,
-    imageUrl: 'https://picsum.photos/seed/np5/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61kuT-rqijL._UF1000,1000_QL80_.jpg',
     imageHint: 'multivitamin capsules bottle',
   },
   {
@@ -46,7 +46,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein',
     description: '24g of whey protein per serving with whey protein isolates as the primary ingredient. Double Rich Chocolate, 2 lbs.',
     price: 3500,
-    imageUrl: 'https://picsum.photos/seed/np6/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71f+UBXh2vL.jpg',
     imageHint: 'whey protein tub',
   },
   {
@@ -54,7 +54,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Seven Seas Original Cod-Liver Oil Capsules',
     description: 'Rich source of Omega-3 with EPA & DHA, Vitamin A and Vitamin D. 100 capsules.',
     price: 320,
-    imageUrl: 'https://picsum.photos/seed/np7/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/817li--CGRL._UF1000,1000_QL80_.jpg',
     imageHint: 'fish oil capsules',
   },
   {
@@ -62,7 +62,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Complan Nutrition and Health Drink - Royale Chocolate',
     description: 'Clinically proven to promote 2x faster growth. Contains 34 vital nutrients. 500g.',
     price: 300,
-    imageUrl: 'https://picsum.photos/seed/np8/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/615m3jHmLHL.jpg',
     imageHint: 'chocolate health drink',
   },
   {
@@ -70,7 +70,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Cadbury Bournvita Health Drink',
     description: 'Chocolate health drink with inner strength formula. 1kg.',
     price: 420,
-    imageUrl: 'https://picsum.photos/seed/np9/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51mEG2UT4XL._UF1000,1000_QL80_.jpg',
     imageHint: 'bournvita jar',
   },
   {
@@ -78,7 +78,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Amway Nutrilite Daily Multivitamin',
     description: 'Multivitamin and multimineral tablets with 13 vitamins and 11 minerals. 120 tablets.',
     price: 2100,
-    imageUrl: 'https://picsum.photos/seed/np10/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61e53+-TSFL.jpg',
     imageHint: 'nutrilite supplement bottle',
   },
   {
@@ -86,7 +86,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Herbalife Formula 1 Shake Mix',
     description: 'Meal replacement shake for weight control. Mango flavor, 500g.',
     price: 1500,
-    imageUrl: 'https://picsum.photos/seed/np11/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71ZCv4ugBPL.jpg',
     imageHint: 'herbalife shake container',
   },
   {
@@ -94,7 +94,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Saffola Masala Oats',
     description: 'A quick, healthy, and tasty way to help you stay in shape. Classic Masala, 500g.',
     price: 185,
-    imageUrl: 'https://picsum.photos/seed/np12/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71XUeN07hYL._UF1000,1000_QL80_.jpg',
     imageHint: 'masala oats packet',
   },
   {
@@ -102,7 +102,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Tata GoFit Plant Protein Powder',
     description: 'Protein powder for women, easy to digest. Chocolate flavour, 500g.',
     price: 850,
-    imageUrl: 'https://picsum.photos/seed/np13/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/6199gZFbdUL._UF1000,1000_QL80_.jpg',
     imageHint: 'plant protein powder',
   },
   {
@@ -110,7 +110,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'MuscleBlaze BCAA Gold 8:1:1',
     description: 'Intra-workout fuel with 7g BCAA, electrolytes, and glutamine. Green Apple, 400g.',
     price: 1300,
-    imageUrl: 'https://picsum.photos/seed/np14/400/300',
+    imageUrl: 'https://images-eu.ssl-images-amazon.com/images/I/61e2j2JElQL._AC_UL600_SR600,600_.jpg',
     imageHint: 'bcaa powder tub',
   },
   {
@@ -118,7 +118,7 @@ export const nutritionProducts: NutritionProduct[] = [
     name: 'Fast&Up Charge Vitamin C & Zinc',
     description: 'Effervescent tablets for immunity boosting. Orange flavour, 20 tablets.',
     price: 350,
-    imageUrl: 'https://picsum.photos/seed/np15/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/615YIWdC6CL.jpg',
     imageHint: 'vitamin c tablets',
   },
 ];

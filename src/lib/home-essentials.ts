@@ -7,7 +7,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Dettol Liquid Hand Wash',
     description: 'Skincare liquid soap refill, protects from 100 illness-causing germs. 1.5L.',
     price: 299,
-    imageUrl: 'https://picsum.photos/seed/he1/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61H0GkhHyQL._UF1000,1000_QL80_.jpg',
     imageHint: 'hand wash bottle',
   },
   {
@@ -15,7 +15,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Lizol Disinfectant Surface Cleaner',
     description: 'Kills 99.9% germs, removes tough stains. Citrus flavor, 2L.',
     price: 350,
-    imageUrl: 'https://picsum.photos/seed/he2/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61nJ8gZBSXL._UF894,1000_QL80_.jpg',
     imageHint: 'surface cleaner bottle',
   },
   {
@@ -23,7 +23,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Savlon Hand Sanitizer',
     description: 'Germ protection on the go, without soap. 500ml.',
     price: 250,
-    imageUrl: 'https://picsum.photos/seed/he3/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/5192j0m0nuS.jpg',
     imageHint: 'hand sanitizer bottle',
   },
   {
@@ -31,7 +31,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Harpic Powerplus Toilet Cleaner',
     description: '10x more yellowish stain removal. Original, 1L.',
     price: 190,
-    imageUrl: 'https://picsum.photos/seed/he4/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61fQA+kazoL.jpg',
     imageHint: 'toilet cleaner bottle',
   },
   {
@@ -39,7 +39,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Colin Glass and Surface Cleaner',
     description: 'Provides a streak-free shine. 500ml spray bottle.',
     price: 90,
-    imageUrl: 'https://picsum.photos/seed/he5/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71xvAY7ekCL.jpg',
     imageHint: 'glass cleaner spray',
   },
   {
@@ -47,7 +47,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Good Knight Gold Flash Refill',
     description: 'Liquid vaporizer refill for protection against mosquitos. Pack of 2.',
     price: 140,
-    imageUrl: 'https://picsum.photos/seed/he6/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61hDaUlBwNL.jpg',
     imageHint: 'mosquito repellent liquid',
   },
   {
@@ -55,7 +55,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Ariel Matic Top Load Detergent',
     description: 'Washing powder for top load washing machines. 3kg.',
     price: 650,
-    imageUrl: 'https://picsum.photos/seed/he7/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61Gdmami7xL.jpg',
     imageHint: 'detergent powder box',
   },
   {
@@ -63,7 +63,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Comfort After Wash Fabric Conditioner',
     description: 'Gives unbeatable shine and fragrance. Morning Fresh, 860ml.',
     price: 220,
-    imageUrl: 'https://picsum.photos/seed/he8/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/718Fc-6Y0QL.jpg',
     imageHint: 'fabric conditioner bottle',
   },
   {
@@ -71,7 +71,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Vim Dishwash Liquid Gel',
     description: 'With the power of 100 lemons, cleans tough grease. 750ml.',
     price: 150,
-    imageUrl: 'https://picsum.photos/seed/he9/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51rhw--KcDL._UF1000,1000_QL80_.jpg',
     imageHint: 'dishwash gel bottle',
   },
   {
@@ -79,7 +79,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Scotch-Brite Scrub Pad',
     description: 'Heavy-duty scrub pads for tough stains. Pack of 3.',
     price: 45,
-    imageUrl: 'https://picsum.photos/seed/he10/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61f9BSiiixL.jpg',
     imageHint: 'kitchen scrub pads',
   },
   {
@@ -87,7 +87,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'HIT Cockroach Killer Spray',
     description: 'Instantly kills disease-spreading cockroaches. 400ml.',
     price: 200,
-    imageUrl: 'https://picsum.photos/seed/he11/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71MX1WuV1JL.jpg',
     imageHint: 'insect killer spray',
   },
   {
@@ -95,7 +95,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Odoform Air Freshener Blocks',
     description: 'Long-lasting fragrance for bathrooms and cupboards. Pack of 4.',
     price: 120,
-    imageUrl: 'https://picsum.photos/seed/he12/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71hbrL1vOUL.jpg',
     imageHint: 'air freshener blocks',
   },
   {
@@ -103,7 +103,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Presto! Oxo-Biodegradable Garbage Bags',
     description: 'Medium size, 19x21 inches. 30 bags per roll, pack of 6.',
     price: 300,
-    imageUrl: 'https://picsum.photos/seed/he13/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71T2M3bz77L.jpg',
     imageHint: 'garbage bags roll',
   },
   {
@@ -111,7 +111,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Tide Plus Double Power Detergent',
     description: 'With a touch of jasmine & rose, for brilliant whites. 1kg.',
     price: 130,
-    imageUrl: 'https://picsum.photos/seed/he14/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71brmyh4oEL._UF1000,1000_QL80_.jpg',
     imageHint: 'detergent powder pack',
   },
   {
@@ -119,7 +119,7 @@ export const homeEssentials: HomeEssential[] = [
     name: 'Pril Dishwashing Bar',
     description: 'With active power molecules to remove tough grease. 250g.',
     price: 20,
-    imageUrl: 'https://picsum.photos/seed/he15/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71GkqELy0fL.jpg',
     imageHint: 'dishwashing soap bar',
   },
 ];

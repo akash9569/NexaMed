@@ -7,7 +7,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Accu-Chek Instant S Glucometer',
     description: 'Simple to use blood glucose monitor with test strips. Provides results in less than 4 seconds.',
     price: 1299,
-    imageUrl: 'https://picsum.photos/seed/hd1/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61lBgAv8UDL.jpg',
     imageHint: 'glucose meter kit',
   },
   {
@@ -15,7 +15,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Omron HEM-7120 BP Monitor',
     description: 'Fully automatic digital blood pressure monitor with cuff wrapping guide and body movement detection.',
     price: 1980,
-    imageUrl: 'https://picsum.photos/seed/hd2/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71XWuWFAqYL.jpg',
     imageHint: 'blood pressure monitor',
   },
   {
@@ -23,7 +23,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Dr Trust Pulse Oximeter',
     description: 'Measures blood oxygen saturation (SpO2), pulse rate, and perfusion index. Water-resistant.',
     price: 1500,
-    imageUrl: 'https://picsum.photos/seed/hd3/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71INx8AXoQL.jpg',
     imageHint: 'pulse oximeter device',
   },
   {
@@ -31,7 +31,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Omron NE-C28 Compressor Nebulizer',
     description: 'Efficient nebulization for respiratory conditions. For both adults and children.',
     price: 2500,
-    imageUrl: 'https://picsum.photos/seed/hd4/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/615ztK5PbgL.jpg',
     imageHint: 'nebulizer machine',
   },
   {
@@ -39,7 +39,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Beurer FT 90 Non-Contact Thermometer',
     description: 'Hygienic and safe temperature measurement without skin contact. Fever alarm.',
     price: 2800,
-    imageUrl: 'https://picsum.photos/seed/hd5/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61lgJjKIHTL.jpg',
     imageHint: 'infrared thermometer',
   },
   {
@@ -47,7 +47,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Agaro Facial Steamer & Inhaler',
     description: '3-in-1 device for steam, vaporization, and sinus relief.',
     price: 450,
-    imageUrl: 'https://picsum.photos/seed/hd6/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71vFfKcqtrL._UF894,1000_QL80_.jpg',
     imageHint: 'steam inhaler device',
   },
   {
@@ -55,7 +55,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Dr. Morepen PS-01 Weighing Scale',
     description: 'Personal digital weighing scale with high precision strain gauge sensor.',
     price: 999,
-    imageUrl: 'https://picsum.photos/seed/hd7/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/51RyXjyHVpL._UF1000,1000_QL80_.jpg',
     imageHint: 'digital weighing scale',
   },
   {
@@ -63,7 +63,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'JSB HF155 Neck Massager',
     description: 'Cervical pain relief kneading massager for neck, back, and shoulders.',
     price: 1850,
-    imageUrl: 'https://picsum.photos/seed/hd8/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/517XMsVoPVL._UF350,350_QL80_.jpg',
     imageHint: 'neck massager pillow',
   },
   {
@@ -71,7 +71,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Flamingo Orthopaedic Heating Belt',
     description: 'Extra long heating pad for back pain, cramps, and muscle soreness.',
     price: 850,
-    imageUrl: 'https://picsum.photos/seed/hd9/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/71pHClCQRXL._UF1000,1000_QL80_.jpg',
     imageHint: 'heating pad electric',
   },
   {
@@ -79,7 +79,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'beatXP Bolt Deep Tissue Massage Gun',
     description: 'Full body massager machine with 6 attachments for pain relief.',
     price: 1999,
-    imageUrl: 'https://picsum.photos/seed/hd10/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61BzwtmQptL._UF1000,1000_QL80_.jpg',
     imageHint: 'massage gun device',
   },
   {
@@ -87,7 +87,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Control D Round Lancets',
     description: 'Fine gauge, sterile lancets for virtually painless blood testing. Box of 100.',
     price: 150,
-    imageUrl: 'https://picsum.photos/seed/hd11/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/91C2zqT20NL._UF350,350_QL80_.jpg',
     imageHint: 'blood lancets box',
   },
   {
@@ -95,7 +95,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Omron HJ-325 Pedometer',
     description: 'Tracks your steps, distance, and calories burned accurately.',
     price: 1200,
-    imageUrl: 'https://picsum.photos/seed/hd12/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61KF5jgrwvL._UF894,1000_QL80_.jpg',
     imageHint: 'pedometer device',
   },
   {
@@ -103,7 +103,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Equinox EQ-HT-01 Hot Water Bottle',
     description: 'High-quality rubber hot water bag for pain relief. 2L capacity.',
     price: 350,
-    imageUrl: 'https://picsum.photos/seed/hd13/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/81KVSbQyl5L._UF350,350_QL80_.jpg',
     imageHint: 'hot water bottle',
   },
   {
@@ -111,7 +111,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Medtech Handyneb Smart Nebulizer',
     description: 'Compact and portable nebulizer for use at home or on the go.',
     price: 1300,
-    imageUrl: 'https://picsum.photos/seed/hd14/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/61xFX+UT28L.jpg',
     imageHint: 'portable nebulizer',
   },
   {
@@ -119,7 +119,7 @@ export const healthDevices: HealthDevice[] = [
     name: 'Rossmax Digital Thermometer TG380',
     description: 'Flexible tip digital thermometer with fever alarm and 10-second reading.',
     price: 250,
-    imageUrl: 'https://picsum.photos/seed/hd15/400/300',
+    imageUrl: 'https://m.media-amazon.com/images/I/31p-EGHNUhL._UF350,350_QL80_.jpg',
     imageHint: 'digital thermometer',
   },
 ];

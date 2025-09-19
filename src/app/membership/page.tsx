@@ -22,7 +22,7 @@ const membershipTiers = [
     ],
     buttonText: 'Sign Up for Free',
     variant: 'secondary' as const,
-    imageUrl: 'https://picsum.photos/seed/membership1/100/100'
+    imageUrl: 'https://toyoos.com/wp-content/uploads/2018/07/Silver-Membership.png'
   },
   {
     id: 'gold-membership',
@@ -39,7 +39,7 @@ const membershipTiers = [
     ],
     buttonText: 'Choose Gold',
     variant: 'default' as const,
-    imageUrl: 'https://picsum.photos/seed/membership2/100/100'
+    imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2022/12/EL/AE/AP/181507398/gold-membership.png'
   },
   {
     id: 'platinum-membership',
@@ -56,7 +56,7 @@ const membershipTiers = [
     ],
     buttonText: 'Choose Platinum',
     variant: 'default' as const,
-    imageUrl: 'https://picsum.photos/seed/membership3/100/100'
+    imageUrl: 'https://toyoos.com/wp-content/uploads/2018/07/Platinum-Membership.png'
   },
 ];
 

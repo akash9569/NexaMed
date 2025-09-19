@@ -21,7 +21,7 @@ const featureCards = [
         description: "FIND STORE",
         icon: MapPin,
         href: "/pharmacy-locator",
-        image: "https://picsum.photos/seed/feat1/200/150",
+        image: "https://i2.wp.com/thpmilton.com/wp-content/uploads/2020/08/pharmacist.png?fit=835%2C500&ssl=1",
         imageHint: "map marker",
     },
     {
@@ -29,7 +29,7 @@ const featureCards = [
         description: "Upload Now",
         icon: Upload,
         href: "/#",
-        image: "https://picsum.photos/seed/feat2/200/150",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUMyxqti_msPCrQI77Y3aU82CpIhUyjVbDFw&s",
         imageHint: "prescription upload",
     },
     {
@@ -37,7 +37,7 @@ const featureCards = [
         description: "Book Now",
         icon: Stethoscope,
         href: "/find-doctors",
-        image: "https://picsum.photos/seed/feat3/200/150",
+        image: "https://assets.medpagetoday.net/media/images/101xxx/101506.jpg",
         imageHint: "doctor consultation",
     },
     {
@@ -45,7 +45,7 @@ const featureCards = [
         description: "Explore Plans",
         icon: ShieldCheck,
         href: "/#",
-        image: "https://picsum.photos/seed/feat4/200/150",
+        image: "https://jupiter.money/blog/wp-content/uploads/2024/06/What_is_Health_Insurance.jpg",
         imageHint: "insurance document",
     },
     {
@@ -53,7 +53,7 @@ const featureCards = [
         description: "AT HOME",
         icon: Microscope,
         href: "/health-checkups",
-        image: "https://picsum.photos/seed/feat5/200/150",
+        image: "https://www.healthchek.in/images/blogs/38288421.png",
         imageHint: "lab test",
     },
 ];
@@ -206,22 +206,22 @@ export default function Home() {
         { id: 'good-health-checkup', name: 'Good Health Platinum Package', price: 1499, mrp: 2998, discount: 50, tag: 'SAFE', imageUrl: 'https://picsum.photos/seed/health5/200/200', imageHint: 'wellness package', showAddToCart: false, href: '/health-checkups' },
     ];
     const featuredBrands = [
-        { name: 'Optimum Nutrition', logoUrl: 'https://picsum.photos/seed/brandlogo1/100/100', imageHint: 'ON logo' },
-        { name: 'Nicotex', logoUrl: 'https://picsum.photos/seed/brandlogo2/100/100', imageHint: 'Nicotex logo' },
-        { name: 'HealthKart', logoUrl: 'https://picsum.photos/seed/brandlogo3/100/100', imageHint: 'HealthKart logo' },
-        { name: 'Saffola', logoUrl: 'https://picsum.photos/seed/brandlogo4/100/100', imageHint: 'Saffola logo' },
-        { name: 'Cetaphil', logoUrl: 'https://picsum.photos/seed/brandlogo5/100/100', imageHint: 'Cetaphil logo' },
-        { name: 'Miduty', logoUrl: 'https://picsum.photos/seed/brandlogo6/100/100', imageHint: 'Miduty logo' },
-        { name: 'Pilgrim', logoUrl: 'https://picsum.photos/seed/brandlogo7/100/100', imageHint: 'Pilgrim logo' },
+        { name: 'Optimum Nutrition', logoUrl: 'https://m.media-amazon.com/images/I/71OsEAdPuZL.jpg', imageHint: 'ON logo' },
+        { name: 'Nicotex', logoUrl: 'https://m.media-amazon.com/images/I/61fU-e6MT8L.jpg', imageHint: 'Nicotex logo' },
+        { name: 'HealthKart', logoUrl: 'https://static.startuptalky.com/2024/04/HealthKart-Logo-Startuptalky.jpg', imageHint: 'HealthKart logo' },
+        { name: 'Saffola', logoUrl: 'https://m.media-amazon.com/images/I/61ZSTmboXVL.jpg', imageHint: 'Saffola logo' },
+        { name: 'Cetaphil', logoUrl: 'https://m.media-amazon.com/images/I/51O+J5jnXcL.jpg', imageHint: 'Cetaphil logo' },
+        { name: 'Miduty', logoUrl: 'https://m.media-amazon.com/images/I/51GDh3z9RTL.jpg', imageHint: 'Miduty logo' },
+        { name: 'Pilgrim', logoUrl: 'https://m.media-amazon.com/images/I/61RNasSEEdL._UF1000,1000_QL80_.jpg', imageHint: 'Pilgrim logo' },
     ];
     const personalCareCategories = [
-        { name: 'Skin Care', imageUrl: 'https://picsum.photos/seed/pcat1/120/120', imageHint: 'skin care products', bgColor: 'bg-green-100', href: "/personal-care" },
-        { name: 'Hair Care', imageUrl: 'https://picsum.photos/seed/pcat2/120/120', imageHint: 'hair care products', bgColor: 'bg-blue-100', href: "/personal-care" },
-        { name: 'Sexual Wellness', imageUrl: 'https://picsum.photos/seed/pcat3/120/120', imageHint: 'sexual wellness products', bgColor: 'bg-orange-100', href: "/women-care" },
-        { name: 'Oral Care', imageUrl: 'https://picsum.photos/seed/pcat4/120/120', imageHint: 'oral care products', bgColor: 'bg-red-100', href: "/personal-care" },
-        { name: 'Elderly Care', imageUrl: 'https://picsum.photos/seed/pcat5/120/120', imageHint: 'elderly care products', bgColor: 'bg-yellow-100', href: "/health-devices" },
-        { name: 'Baby Care', imageUrl: 'https://picsum.photos/seed/pcat6/120/120', imageHint: 'baby care products', bgColor: 'bg-purple-100', href: "/baby-care" },
-        { name: 'Women Care', imageUrl: 'https://picsum.photos/seed/pcat7/120/120', imageHint: 'women care products', bgColor: 'bg-pink-100', href: "/women-care" },
+        { name: 'Skin Care', imageUrl: 'https://media.post.rvohealth.io/wp-content/uploads/2022/08/SKIN-CARE-Facebook-Category-Hub-Page-Art-1200x628-1.png', imageHint: 'skin care products', bgColor: 'bg-green-100', href: "/personal-care" },
+        { name: 'Hair Care', imageUrl: 'https://deyga.in/cdn/shop/articles/shutterstock_1488709208.webp?v=1697779417', imageHint: 'hair care products', bgColor: 'bg-blue-100', href: "/personal-care" },
+        { name: 'Sexual Wellness', imageUrl: 'https://sa1s3optim.patientpop.com/filters:format(webp)/assets/images/provider/photos/2758176.png', imageHint: 'sexual wellness products', bgColor: 'bg-orange-100', href: "/women-care" },
+        { name: 'Oral Care', imageUrl: 'https://images.ctfassets.net/xxv4b9mbhlgd/73PKv8BmWGnsABEP3Ld9Xh/484e94225257c541225f69a876ebdb7a/oral-dental-care.jpg', imageHint: 'oral care products', bgColor: 'bg-red-100', href: "/personal-care" },
+        { name: 'Elderly Care', imageUrl: 'https://kefihealthcare.com/wp-content/uploads/2022/10/elderly-care-facilities-1024x682.jpeg', imageHint: 'elderly care products', bgColor: 'bg-yellow-100', href: "/health-devices" },
+        { name: 'Baby Care', imageUrl: 'https://plus.unsplash.com/premium_photo-1661515635718-9414fe6adfd6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFieSUyMGNhcmV8ZW58MHx8MHx8fDA%3D', imageHint: 'baby care products', bgColor: 'bg-purple-100', href: "/baby-care" },
+        { name: 'Women Care', imageUrl: 'https://w.ndtvimg.com/sites/3/2022/05/04153041/women_self_Care_reproductive_health_istock_660x330.jpg', imageHint: 'women care products', bgColor: 'bg-pink-100', href: "/women-care" },
     ];
 
 

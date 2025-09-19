@@ -34,10 +34,10 @@ export function Footer() {
               Your trusted partner in health and wellness. Delivering care, one click at a time.
             </p>
              <div className="flex space-x-4 mt-4">
-              <Link href="#" aria-label="Facebook"><Facebook className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
-              <Link href="#" aria-label="Twitter"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
-              <Link href="#" aria-label="Instagram"><Instagram className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
-              <Link href="#" aria-label="LinkedIn"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+              <Link href="https://www.facebook.com/iamakashsingh9" aria-label="Facebook"><Facebook className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+              <Link href="https://x.com/AkashSingh57860" aria-label="Twitter"><Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+              <Link href="https://www.instagram.com/iamakashsingh9/?next=%2F" aria-label="Instagram"><Instagram className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
+              <Link href="https://www.linkedin.com/in/akash-singh-a69213242/" aria-label="LinkedIn"><Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" /></Link>
             </div>
           </div>
 
