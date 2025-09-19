@@ -8,14 +8,14 @@ const teamMembers = [
     title: 'Co Founder & CEO',
     imageUrl: 'https://drive.google.com/uc?export=download&id=1m-GFuqVe3BP84p0ppF0yw15MFdqY0aiN',
     imageHint: 'male technology officer',
-    description: 'Vikram leads our technology team, ensuring a seamless and secure digital experience for our users.',
+    description: 'With over 2 years of experience in the medical field, Dr. Singh founded NexaMed to make healthcare accessible to all.',
   },
   {
     name: 'Dr. Akash Singh',
     title: 'Chief Technology Officer',
     imageUrl: 'https://drive.google.com/uc?export=download&id=1EIVBCPOvQthzqD5ceR3IGVX4c85Uiu7u',
     imageHint: 'male founder photo',
-    description: 'With over 20 years of experience in the medical field, Dr. Singh founded NexaMed to make healthcare accessible to all.',
+    description: 'Akash Singh leads our technology team and manages the website, ensuring a seamless, secure, and user-friendly digital experience.',
   },
   
   {
