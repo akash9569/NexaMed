@@ -318,7 +318,7 @@ export const conditions: Condition[] = [
     id: 'cold-immunity',
     name: 'Cold & Immunity',
     description: 'Boost your immunity and fight off the common cold.',
-    imageUrl: 'https://www.jacionline.org/cms/10.1016/j.jaci.2022.09.037/asset/e42e2851-2163-4923-bb28-bfc7547af651/main.assets/fx1_lrg.jpg',
+    imageUrl: 'https://laboussolejoplin.com/wp-content/uploads/2024/09/Boost-Your-Immunity-with-IV-Thearpy-and-IM-Therapy-and-LaBoussoleJoplin.com-IV-Hydration-1024x699.png',
     imageHint: 'orange vitamin',
     symptoms: ['Runny nose', 'Sore throat', 'Sneezing', 'Fever', 'Body aches'],
     treatments: ['Vitamin C & Zinc supplements', 'Herbal remedies (e.g., Echinacea, Tulsi)', 'Decongestants', 'Pain relievers'],

@@ -40,7 +40,6 @@ const categoryNavLinks = [
     { name: "Health Condition", href: "/health-conditions" },
 ]
 
-
 export function Header() {
   const pathname = usePathname();
   const { cart } = useCart();
@@ -71,6 +70,7 @@ export function Header() {
                     <Link href="/" className="flex items-center space-x-2">
                         <NexaMedLogo className="h-6 w-6 text-primary" />
                         <span className="font-bold font-headline">NexaMed</span>
+                        <PlusCircle className="h-5 w-5 text-green-500" />
                     </Link>
                   </SheetTitle>
                 </SheetHeader>

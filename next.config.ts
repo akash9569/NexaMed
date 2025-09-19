@@ -95,6 +95,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'laboussolejoplin.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
